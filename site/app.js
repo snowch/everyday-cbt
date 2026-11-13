@@ -31,7 +31,7 @@
       const ids = [...document.querySelectorAll('.lesson-page')].map(el => el.dataset.id);
       const viewed = ids.filter(x => state.viewed.includes(x)).length;
       const tried = ids.filter(x => state.tried.includes(x)).length;
-      caption.textContent = `${viewed}/8 pages viewed · ${tried}/4 practices tried. Viewing and attempts are not a mastery score.${storageAvailable ? '' : ' Progress is available only for this visit because browser storage is unavailable.'}`;
+      caption.textContent = `${viewed}/8 pages viewed · ${tried}/4 practices tried.${storageAvailable ? '' : ' Progress won’t be saved in this browser.'}`;
     }
   }
   const resume = document.getElementById('resume-learning');
@@ -45,6 +45,15 @@
     const pages = [...player.querySelectorAll('.lesson-page')];
     const previous = document.getElementById('previous-page');
     const next = document.getElementById('next-page');
+    const chapterOptions = player.querySelector('.chapter-options');
+    if (chapterOptions) {
+      document.addEventListener('click', event => {
+        if (chapterOptions.open && !chapterOptions.contains(event.target)) chapterOptions.open = false;
+      });
+      chapterOptions.addEventListener('keydown', event => {
+        if (event.key === 'Escape') { chapterOptions.open = false; chapterOptions.querySelector('summary').focus(); }
+      });
+    }
     let current = 0;
     function show(focus = false) {
       const match = location.hash.match(/^#p([1-8])$/);
@@ -54,6 +63,7 @@
         page.querySelectorAll('audio').forEach(audio => { if (index !== current) { audio.pause(); try { audio.currentTime = 0; } catch {} } });
       });
       previous.disabled = current === 0; next.disabled = current === pages.length - 1;
+      const options = player.querySelector('.chapter-options'); if (options) options.open = false;
       document.getElementById('page-status').textContent = `Page ${current + 1} of ${pages.length} · ${pages[current].querySelector('.lesson-stage').textContent}`;
       document.querySelectorAll('[data-page-link]').forEach(link => {
         if (Number(link.dataset.pageLink) === current) link.setAttribute('aria-current', 'step');

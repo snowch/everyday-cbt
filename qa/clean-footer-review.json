@@ -1,0 +1,40 @@
+{
+  "layout": {
+    "chapters": 12,
+    "widths": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "checked_layouts": 60,
+    "chapter_options": "pass",
+    "contextual_exports": "pass",
+    "final_page_transitions": "pass",
+    "evidence_links": "pass",
+    "browser_errors": []
+  },
+  "course_regression": {
+    "internal_links": 516,
+    "pages": 96,
+    "feedback_choices": 72,
+    "recall_reveals": 24,
+    "labs": 12,
+    "widths": [
+      1440,
+      1024,
+      768,
+      620,
+      390,
+      320
+    ],
+    "console_errors": [],
+    "progress": "pass",
+    "writing_privacy": "pass",
+    "response_export": "pass",
+    "audio_playback": "pass",
+    "no_javascript": "pass",
+    "storage_unavailable": "pass"
+  }
+}

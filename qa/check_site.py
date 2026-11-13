@@ -44,7 +44,7 @@ if __name__=='__main__':
                 page.locator(f'[data-page-link="{i}"]').click()
                 active=page.locator(f'#p{i+1}');active.wait_for(state='visible')
                 assert page.locator('.lesson-page:visible').count()==1
-                assert lesson['title']==active.locator('h2').inner_text()
+                assert lesson['title']==active.locator('.lesson-copy h2').inner_text()
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
                 report['pages']+=1
                 if lesson['type']=='decision':
@@ -63,7 +63,9 @@ if __name__=='__main__':
                     assert active.locator('textarea').count()==5
                     active.locator('textarea').first.fill('A fictional response kept in this tab.')
                     active.get_by_role('button',name='I’ve tried this lab').click();report['labs']+=1
+            page.locator('.chapter-options > summary').click()
             assert '8/8 pages viewed · 4/4 practices tried' in page.locator('[data-chapter-progress]').inner_text()
+            page.locator('.chapter-options > summary').click()
         # Notes survive page navigation within the document but never enter local storage.
         page.locator('[data-page-link="0"]').click();page.locator('[data-page-link="7"]').click()
         assert page.locator('#p8 textarea').first.input_value()=='A fictional response kept in this tab.'
@@ -102,7 +104,8 @@ if __name__=='__main__':
         blocked.add_init_script('Storage.prototype.getItem=function(){throw new Error("blocked")};Storage.prototype.setItem=function(){throw new Error("blocked")};')
         other=blocked.new_page();other.goto(base+'/chapters/one-event.html',wait_until='networkidle')
         assert other.locator('.lesson-page:visible').count()==1
-        assert 'unavailable' in other.locator('[data-chapter-progress]').inner_text();blocked.close()
+        other.locator('.chapter-options > summary').click()
+        assert 'won’t be saved' in other.locator('[data-chapter-progress]').inner_text();blocked.close()
         nojs=browser.new_context(java_script_enabled=False)
         other=nojs.new_page();other.goto(base+'/chapters/one-event.html')
         assert other.locator('.lesson-page:visible').count()==8

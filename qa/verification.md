@@ -37,3 +37,17 @@ authored key-message bullets. Checked all 48 at 1440, 1024, 768, 390, and 320 pi
 recording transcripts and reading edition. All 96 narration scripts, questions,
 answers, and lab prompts are unchanged; the strict build verified the existing
 recordings against their script and file hashes. Results: `key-messages-review.json`.
+
+## Lesson-ending simplification — 2026-11-13
+
+Removed the stack of progress, export/print controls, notices, evidence disclosures,
+and between-chapter links from beneath ordinary page navigation. Chapter options
+now contains progress and tools; writing pages contain their response export; the
+final page contains the next-chapter transition and any checkpoint invitation.
+The chapter footer has two quiet links.
+
+Checked all twelve chapters at five widths (60 layouts), menu opening and Escape,
+contextual exports, end-of-chapter transitions, and chapter evidence destinations.
+The full browser regression passed all 96 pages and 72 feedback variants, including
+exports, writing privacy, progress, keyboard navigation, playback, and unavailable
+storage. The extracted offline package also passed. Results: `clean-footer-review.json`.

@@ -158,3 +158,16 @@ textarea { width: 100%; display: block; padding: 12px 14px; background: #FCFDFE;
 .key-messages li { font-size: 20px; line-height: 1.6; padding-left: 18px; border-left: 2px solid var(--ocean); margin: 20px 0; }
 @media (max-width: 800px) { .key-messages li { font-size: 18px; padding-left: 16px; } }
 @media print { .key-messages li { font-size: 12pt; margin-block: 12px; } }
+.chapter-options { position: relative; flex-shrink: 0; font-size: 14px; }
+.chapter-options > summary { border: 1px solid #BACDD9; border-radius: 7px; padding: 9px 13px; color: var(--ink); background: transparent; }
+.chapter-options-panel { position: absolute; right: 0; top: calc(100% + 8px); width: min(340px, calc(100vw - 40px)); padding: 18px; background: white; border: 1px solid #BACDD9; border-radius: 9px; box-shadow: 0 8px 25px #19394D18; z-index: 10; }
+.chapter-options-panel a { display: block; margin-block: 12px; }
+.chapter-options-panel .progress-caption { margin: 0 0 15px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-size: 13px; }
+.chapter-options-panel .button { font-size: 14px; min-height: 40px; padding: 8px 13px; }
+.chapter-page .player { padding-bottom: 0; }
+.chapter-page .response-tools { margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--line); }
+.chapter-page .response-tools > p { margin-bottom: 0; font-size: 13px; }
+.lesson-footer { justify-content: flex-start; flex-wrap: nowrap; gap: 24px; padding-block: 16px 22px; }
+.lesson-footer a { font-size: 12px; }
+@media (max-width: 620px) { .chapter-options-panel { right: auto; left: 0; } }
+@media print { .chapter-options, .lesson-footer { display: none; } }

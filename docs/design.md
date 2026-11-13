@@ -45,3 +45,15 @@ paragraphs into the panel or derive bullets by splitting those paragraphs.
 
 Decision prompts, recall instructions, and lab fields retain their normal formats.
 Changing only teaching summaries does not require regenerating unchanged recordings.
+
+## Keep the lesson ending quiet
+
+Page navigation is the end of an ordinary lesson page. A compact Chapter options
+disclosure in the heading contains progress, printing, a chapter workbook link,
+and a direct link to the chapter’s evidence notes on the guidance page. It closes
+on page changes, outside clicks, or Escape.
+
+Response exports and the short unsaved-writing note appear only with recall and
+lab writing. Chapter transitions and checkpoint invitations appear on the final
+page. The chapter footer contains just guidance and font-license links; the fuller
+footer remains on reference and workbook pages.
