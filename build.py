@@ -45,6 +45,10 @@ def build():
     (output / "index.html").write_text(html, encoding="utf-8")
     for asset in ("style.css", "favicon.svg"):
         shutil.copyfile(ROOT / "site" / asset, output / asset)
+    shutil.copytree(ROOT / "assets", output / "assets", dirs_exist_ok=True)
+    shutil.copytree(ROOT / "licenses", output / "licenses", dirs_exist_ok=True)
+    for notice in ("FONT-LICENSE.txt", "THIRD-PARTY-NOTICES.txt"):
+        shutil.copyfile(ROOT / notice, output / notice)
     (output / ".nojekyll").touch()
     print(f"Built {len(chapters)} chapter outlines in {output}")
 

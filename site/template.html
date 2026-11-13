@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A planned story-led introduction to cognitive behavioural therapy, with twelve practical labs for understanding everyday patterns.">
-  <meta name="theme-color" content="#f8f5ed">
+  <meta name="theme-color" content="#EDF3F8">
   <title>$title — small changes, thoughtful experiments</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/fonts/LibreBaskerville%5Bwght%5D.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./assets/fonts/Arimo%5Bwght%5D.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -17,39 +19,44 @@
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
-      <div>
+      <div class="hero-copy">
         <p class="eyebrow">A practical introduction to CBT</p>
         <h1 id="hero-title">Notice the pattern.<br>Try a small change.</h1>
         <p class="intro">Explore how thoughts, feelings, and actions connect through everyday stories and thoughtful experiments.</p>
         <a class="button" href="#course">Explore the course plan <span aria-hidden="true">↓</span></a>
+        <p class="hero-note">12 planned chapters · 12 practical labs<br>About 4–6 hours, plus field practice, at your pace.</p>
         <p class="status"><span aria-hidden="true">●</span> $status · lessons coming later</p>
       </div>
       <figure class="map">
-        <svg viewBox="0 0 440 400" role="img" aria-labelledby="map-title map-desc">
+        <svg viewBox="0 0 440 440" role="img" aria-labelledby="map-title map-desc">
           <title id="map-title">Five parts of an everyday experience</title>
           <desc id="map-desc">A situation connects with thoughts, feelings, bodily sensations, and behaviour. Lines connect all five parts; changes in one can affect the others.</desc>
-          <g fill="none" stroke="#b4beb1" stroke-width="1.5"><path d="M220 54 365 158 312 323 128 323 75 158Z"/><path d="M220 54 312 323 75 158 365 158 128 323Z"/></g>
-          <g fill="#f8f5ed" stroke="#b4beb1" stroke-width="1.5">
+          <path d="M6 410V220a214 214 0 0 1 428 0v190Z" fill="#D8E6EE"/>
+          <path d="M24 410V220a196 196 0 0 1 392 0v190Z" fill="#F2F6F9" stroke="#A9C4D3" stroke-width="1.5"/>
+          <g transform="translate(18 48) scale(.92)">
+          <g fill="none" stroke="#9AB5C6" stroke-width="1.5"><path d="M220 54 365 158 312 323 128 323 75 158Z"/><path d="M220 54 312 323 75 158 365 158 128 323Z"/></g>
+          <g fill="#F2F6F9" stroke="#9AB5C6" stroke-width="1.5">
             <rect x="154" y="28" width="132" height="52" rx="26"/><rect x="299" y="132" width="132" height="52" rx="26"/>
             <rect x="246" y="297" width="132" height="52" rx="26"/><rect x="53" y="297" width="150" height="52" rx="26"/><rect x="9" y="132" width="132" height="52" rx="26"/>
           </g>
-          <g fill="#294a3e" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15"><text x="220" y="60">Situation</text><text x="365" y="164">Thoughts</text><text x="312" y="329">Feelings</text><text x="128" y="329">Body sensations</text><text x="75" y="164">Behaviour</text></g>
-          <circle cx="220" cy="202" r="44" fill="#294a3e"/><path d="M203 202h34m-9-9 9 9-9 9m-16-18-9 9 9 9" fill="none" stroke="#f8f5ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#19394D" text-anchor="middle" font-family="CourseSans, Arial, sans-serif" font-size="15"><text x="220" y="60">Situation</text><text x="365" y="164">Thoughts</text><text x="312" y="329">Feelings</text><text x="128" y="329">Body sensations</text><text x="75" y="164">Behaviour</text></g>
+          <circle cx="220" cy="202" r="44" fill="#216B88"/><path d="M203 202h34m-9-9 9 9-9 9m-16-18-9 9 9 9" fill="none" stroke="#F2F6F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <path d="M135 401h170" stroke="#D8AC5C" stroke-width="3" stroke-linecap="round"/>
         </svg>
         <figcaption>One experience. Five connected parts.</figcaption>
       </figure>
-    </section>
-    <div class="facts wrap" aria-label="Planned course format"><span><strong>12</strong> story-led chapters</span><span><strong>12</strong> practical labs</span><span><strong>4–6 hours</strong> planned course time</span><span><strong>Your pace</strong> room to reflect</span></div>
-    <section class="section wrap" id="approach" aria-labelledby="approach-title">
-      <div class="section-heading"><p class="eyebrow">How you’ll learn</p><h2 id="approach-title">A little understanding.<br>Something to try.</h2></div>
-      <div class="approach-copy"><p>Follow fictional characters through familiar moments: an unanswered message, a difficult week, a conversation that keeps replaying. Explore what might keep a pattern going, then choose a manageable next step.</p><p>The aim is careful observation, balanced reasoning, and useful action. Sometimes that means reconsidering a thought. Sometimes it means solving a real problem, setting a boundary, or asking for support.</p><ol class="cycle"><li>Meet the situation</li><li>Explore the pattern</li><li>Try a small experiment</li><li>Reflect on what happened</li></ol></div>
     </section>
     <section class="section course-section wrap" id="course" aria-labelledby="course-title">
       <div class="course-heading"><div><p class="eyebrow">The planned curriculum</p><h2 id="course-title">From noticing to practising.</h2></div><p>Start with the connections. Build a set of skills. Bring them together in situations that don’t have a tidy answer.</p></div>
       <div class="chapters">$chapters</div>
     </section>
+    <section class="section wrap" id="approach" aria-labelledby="approach-title">
+      <div class="section-heading"><p class="eyebrow">How you’ll learn</p><h2 id="approach-title">A little understanding.<br>Something to try.</h2></div>
+      <div class="approach-copy"><p>Follow fictional characters through familiar moments: an unanswered message, a difficult week, a conversation that keeps replaying. Explore what might keep a pattern going, then choose a manageable next step.</p><p>The aim is careful observation, balanced reasoning, and useful action. Sometimes that means reconsidering a thought. Sometimes it means solving a real problem, setting a boundary, or asking for support.</p><ol class="cycle"><li>Meet the situation</li><li>Explore the pattern</li><li>Try a small experiment</li><li>Reflect on what happened</li></ol></div>
+    </section>
     <aside class="development wrap" aria-labelledby="development-title"><div><p class="eyebrow">Where things stand</p><h2 id="development-title">The course starts here.</h2></div><div><p>This is the course plan. Lessons, narration, worksheets, and learning checks are still to be developed. The estimated time and format may change as the lessons are tested.</p><p>The intended scope is introductory CBT skills education. It does not provide diagnosis or individual treatment. Clinical review and a learner pilot are planned; neither has taken place yet.</p><a class="text-link" href="https://github.com/snowch/everyday-cbt/blob/main/docs/course-plan.md">Read the design and production plan</a></div></aside>
   </main>
-  <footer class="wrap"><span class="wordmark">Everyday CBT</span><p>Understand a pattern. Choose something to try. Learn from the result.</p><a href="https://github.com/snowch/everyday-cbt">Source on GitHub</a></footer>
+  <footer class="wrap"><span class="wordmark">Everyday CBT</span><p>Understand a pattern. Choose something to try. Learn from the result.</p><div><a href="https://github.com/snowch/everyday-cbt">Source on GitHub</a><br><a href="./FONT-LICENSE.txt">Font licenses</a></div></footer>
 </body>
 </html>

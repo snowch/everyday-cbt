@@ -1,0 +1,17 @@
+Everyday CBT — third-party notices
+
+Fonts
+-----
+Libre Baskerville and Arimo are bundled without modification under the SIL Open
+Font License 1.1. Copyright notices and complete license text are provided in
+FONT-LICENSE.txt and licenses/. Original Google Fonts source URLs, commit IDs,
+sizes, and SHA-256 hashes are recorded in assets/fonts/manifest.json.
+
+Design reference
+----------------
+At the repository owner's request, the visual design follows Common Ground's
+field-guide styling: pale blue paper, dark blue cover, Libre Baskerville headings,
+Arimo text, ocean/brass accents, and numbered chapter rows.
+Reference: https://github.com/snowch/common-ground-social-psychology
+No Common Ground lesson text, narration, or illustrations are bundled here.
+The CBT diagram and page implementation were adapted within this repository.

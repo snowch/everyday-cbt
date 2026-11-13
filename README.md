@@ -9,6 +9,7 @@ The course has not had a clinical review or learner pilot.
 
 - [Course site](https://snowch.github.io/everyday-cbt/)
 - [Course design and production plan](docs/course-plan.md)
+- [Visual design](docs/design.md): Common Ground typography, colours, and layout.
 
 ## Build and preview
 
@@ -27,6 +28,8 @@ analytics, or form submissions.
 - `course.json`: chapter titles, stories, learning goals, and proposed labs.
 - `site/template.html`: responsive course overview.
 - `site/style.css`: page and print styles.
+- `assets/fonts/`, `FONT-LICENSE.txt`, `licenses/`: bundled Libre Baskerville and
+  Arimo fonts, provenance, and complete OFL notices.
 - `build.py`: validates the curriculum and renders `dist/`.
 - `.github/workflows/pages.yml`: builds pull requests; publishes pushes to `main`.
 
@@ -44,5 +47,5 @@ gh run list --workflow pages.yml
 Inspired by the learning format of
 [Common Ground](https://github.com/snowch/common-ground-social-psychology): stories,
 visual explanations, decisions with feedback, recall, and field practice. This
-repository starts with original planning and implementation; it does not copy
-Common Ground's course assets.
+repository uses Common Ground's field-guide styling with the same open-licensed
+fonts. It does not copy Common Ground's lesson text, narration, or illustrations.
