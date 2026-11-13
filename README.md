@@ -20,6 +20,8 @@ pilot, or clinical outcome study has taken place.
 - 24 decisions with explanatory feedback for all 72 options.
 - 24 recall prompts with suggested reasoning; 12 labs with worked responses.
 - 24 concept diagrams and original illustrations of the recurring characters.
+- Concise key-message bullets beside illustrations, with full explanations in
+  the recording transcripts and reading edition.
 - Three independent cases, including a final unfamiliar case and self-assessment.
 - 96 recorded Kokoro `af_heart` clips, with transcripts and adjustable playback speed.
 - Printable workbook with all labs and cases, complete reading edition, and offline ZIP.

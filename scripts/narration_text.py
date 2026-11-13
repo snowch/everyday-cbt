@@ -1,4 +1,4 @@
-"""Visible-text narration; hidden feedback and suggested answers stay unspoken."""
+"""Full lesson narration; teaching summaries are separate, and hidden answers stay unspoken."""
 def spoken(page):
     parts=[page['title'],*page['paragraphs']]
     if page.get('diagram'):

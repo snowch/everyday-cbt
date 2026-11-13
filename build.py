@@ -17,6 +17,11 @@ STAGES={'story':'The situation','decision':'Make a decision','concept':'Understa
 def paragraphs(items):
     return ''.join(f'<p>{e(x)}</p>' for x in items)
 
+def teaching_copy(page):
+    if page['type'] in ('story', 'concept', 'example'):
+        return '<ul class="key-messages">'+''.join(f'<li>{e(message)}</li>' for message in page['key_messages'])+'</ul>'
+    return paragraphs(page['paragraphs'])
+
 def field(prompt,key):
     return f'<div class="writing-field"><label for="{key}">{e(prompt)}</label><textarea id="{key}" data-prompt="{e(prompt)}" rows="3" spellcheck="true"></textarea></div>'
 
@@ -82,7 +87,7 @@ def render_chapter(c,n,output):
     pages=[]
     for i,p in enumerate(c['pages']):
         key=p['id'];art=visual(p['diagram'],key) if p.get('diagram') else scene(n,key) if p['type'] in ('story','example') else ''
-        body=f'<div class="lesson-copy"><p class="lesson-stage">{STAGES[p["type"]]}</p><h2>{e(p["title"])}</h2>{paragraphs(p["paragraphs"])}{practice(p)}</div>'
+        body=f'<div class="lesson-copy"><p class="lesson-stage">{STAGES[p["type"]]}</p><h2>{e(p["title"])}</h2>{teaching_copy(p)}{practice(p)}</div>'
         clip=ROOT/'audio/clips'/f'{key}.m4a'
         audio=f'<audio controls preload="none" src="../audio/clips/{key}.m4a" aria-label="Narration for {e(p["title"])}"></audio>' if clip.exists() else '<p>Recording is being prepared.</p>'
         transcript=f'<details class="recording-transcript"><summary>Recording transcript</summary><p>{e(spoken(p))}</p></details>'
@@ -136,6 +141,10 @@ def validate(require_audio):
         for p in c['pages']:
             key=p['id'];assert key not in ids;ids.add(key)
             assert p['title'] and all(p['paragraphs'])
+            if p['type'] in ('story', 'concept', 'example'):
+                messages=p['key_messages']
+                assert 3<=len(messages)<=4 and all(isinstance(x,str) and x.strip() for x in messages),key+' teaching summaries'
+                assert all(len(x.split())<=30 for x in messages),key+' summary too long'
             if p['type']=='decision':assert len(p['options'])==3 and 0<=p['best']<3 and all(o['text'] and o['feedback'] for o in p['options'])
             if p['type']=='recall':assert len(p['questions'])==2 and all(q['prompt'] and q['answer'] for q in p['questions'])
             if p['type']=='lab':assert len(p['fields'])==5 and p['example'] and p['review']

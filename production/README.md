@@ -9,8 +9,10 @@ Model and voice-file hashes are pinned in `scripts/generate_audio.py` and record
 in `narration.json`. The voice is synthetic; no real-person voice cloning was used.
 This matches Common Ground's voice selection without copying its recordings.
 
-Narration reads visible lesson text, diagram labels, choices, recall questions,
-and lab prompts. Feedback, revealed recall answers, and suggested lab responses
+Narration reads full lesson explanations, diagram labels, choices, recall questions,
+and lab prompts. Illustrated teaching panels show separately authored key-message
+bullets; the recording transcript retains the full explanation. Feedback, revealed
+recall answers, and suggested lab responses
 are text-only. The on-page recording transcript and downloadable script reflect
 that distinction. There is no automatic advance or autoplay.
 

@@ -34,3 +34,14 @@ Practice writing is kept only in the current document. Download and print contro
 provide explicit ways to retain it. Local progress distinguishes pages viewed from
 practice attempts, without a mastery score or reward streak. The complete reading
 edition supports learning without JavaScript.
+
+## Teaching messages and narration
+
+All 48 illustrated story, concept, and worked-example pages use separately authored
+key-message bullets in the teaching panel. The `key_messages` field contains three
+or four concise points; `paragraphs` retains the full explanation for narration,
+the recording transcript, and the reading edition. Do not substitute full narration
+paragraphs into the panel or derive bullets by splitting those paragraphs.
+
+Decision prompts, recall instructions, and lab fields retain their normal formats.
+Changing only teaching summaries does not require regenerating unchanged recordings.

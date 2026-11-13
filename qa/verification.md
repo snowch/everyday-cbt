@@ -28,3 +28,12 @@ review, learner pilot, independent ASR screen, or human listening review has tak
 place. The accessibility screen samples nine pages/types rather than every state.
 Managed Chrome blocks file:// navigation; the extracted offline course was tested
 through a local HTTP server with no internet access, not by direct file opening.
+
+## Teaching-panel correction — 2026-11-13
+
+The 48 illustrated story, concept, and worked-example panels now show separately
+authored key-message bullets. Checked all 48 at 1440, 1024, 768, 390, and 320 pixels
+(240 layouts), with no overflow or browser errors. Full prose remains in the
+recording transcripts and reading edition. All 96 narration scripts, questions,
+answers, and lab prompts are unchanged; the strict build verified the existing
+recordings against their script and file hashes. Results: `key-messages-review.json`.
