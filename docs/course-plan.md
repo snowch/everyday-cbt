@@ -2,7 +2,7 @@
 
 ## Audience and scope
 
-A proposed twelve-chapter introduction to cognitive behavioural therapy for adults
+A draft twelve-chapter introduction to cognitive behavioural therapy for adults
 with no previous psychology knowledge. The course teaches learners to understand
 a recurring pattern, choose something to try, and learn from the result.
 
@@ -27,7 +27,7 @@ By the end, learners should be able to:
 - Review mixed results and choose a sensible next step.
 - Recognise a returning pattern and use a realistic maintenance plan.
 
-The canonical twelve-chapter outline is in `course.json` and is rendered on the site.
+The twelve chapters and three independent cases are authored in `content.py`, generated into `course.json`, and rendered as the live course.
 
 ## Story and teaching design
 
@@ -56,7 +56,7 @@ appropriate pacing, and when tailored support is needed.
 
 ## Assessment
 
-Three proposed independent pieces of work:
+Three independent pieces of work:
 
 - Early: explain how a fictional character's pattern keeps going.
 - Middle: design an experiment and interpret several possible outcomes.
@@ -70,12 +70,12 @@ mastery or clinical competence.
 
 ## Prototype first
 
-Prototype Chapter 4, **Making room for another interpretation**, with an unanswered
+Chapter 4, **Making room for another interpretation**, uses an unanswered
 message as its central case. Include the event/interpretation distinction, a
 five-part map, a thought record, feedback on balanced reasoning, and an optional
 follow-up experiment that introduces Chapter 7.
 
-Review the prototype before producing the remaining lessons. Check whether
+Use the existing Chapter 4 implementation for initial practitioner and learner review. Check whether
 learners can explain their reasoning and transfer it to a different case.
 
 ## Production milestones
@@ -92,8 +92,10 @@ learners can explain their reasoning and transfer it to a different case.
 6. **Media and distribution:** recorded narration, visual companion, printable
    workbook, offline packages, and browser/playback verification.
 
-Only the foundation is implemented at this stage. No lesson, recorded narration,
-worksheet, assessment, clinical review, or learner pilot is complete.
+The course implementation now includes all twelve lessons, 96 recorded lesson clips,
+a workbook, complete reading edition, and the three independent cases. Clinical
+review, learner piloting, and human narration listening review remain outstanding.
+Technical verification is recorded separately in `qa/verification.md`.
 
 ## Sources and delivery
 

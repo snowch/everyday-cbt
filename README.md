@@ -1,51 +1,101 @@
 # Everyday CBT
 
-A story-led introduction to cognitive behavioural therapy: understand recurring
-patterns, choose a small change, and learn from what happens.
+A complete draft introduction to cognitive behavioural therapy through twelve
+original stories, visual explanations, recorded narration, and practical labs.
 
-**Status: course planning.** The site currently presents the proposed twelve-chapter
-curriculum. Lessons, narration, worksheets, and assessments are not yet available.
-The course has not had a clinical review or learner pilot.
+**Draft v0.1.0.** Introductory skills education, not diagnosis, individual treatment,
+or professional clinical training. No qualified practitioner review, learner
+pilot, or clinical outcome study has taken place.
 
-- [Course site](https://snowch.github.io/everyday-cbt/)
-- [Course design and production plan](docs/course-plan.md)
-- [Visual design](docs/design.md): Common Ground typography, colours, and layout.
+- [Open the course](https://snowch.github.io/everyday-cbt/)
+- [Practice workbook](https://snowch.github.io/everyday-cbt/workbook.html) · [PDF](https://snowch.github.io/everyday-cbt/workbook.pdf)
+- [Complete reading edition](https://snowch.github.io/everyday-cbt/reading.html) · [PDF](https://snowch.github.io/everyday-cbt/course.pdf)
+- [Offline course](https://snowch.github.io/everyday-cbt/everyday-cbt-offline.zip)
+- [Guidance, scope, and chapter sources](https://snowch.github.io/everyday-cbt/about.html)
+
+## What is included
+
+- 12 chapters with 8 pages each: story, initial decision, two explanations, worked
+  example, transfer decision, recall, and lab.
+- 24 decisions with explanatory feedback for all 72 options.
+- 24 recall prompts with suggested reasoning; 12 labs with worked responses.
+- 24 concept diagrams and original illustrations of the recurring characters.
+- Three independent cases, including a final unfamiliar case and self-assessment.
+- 96 recorded Kokoro `af_heart` clips, with transcripts and adjustable playback speed.
+- Printable workbook with all labs and cases, complete reading edition, and offline ZIP.
+
+Allow about 20–30 minutes per chapter, plus field practice and the independent
+cases. This is a design estimate, not timing established in a learner pilot.
+
+Progress stores page IDs and practice-attempt IDs locally. It is not a mastery
+score. Written responses remain in the current tab and are not stored or submitted;
+learners can download them as text before leaving. The course works without
+browser storage. The reading edition includes all feedback without JavaScript.
 
 ## Build and preview
 
-Python 3.10 or newer is sufficient; no third-party build dependencies are required.
+Python 3.10 or newer is enough for normal builds; all runtime assets are bundled.
 
 ```sh
-python3 build.py
+python3 build.py --require-audio
+python3 scripts/package_offline.py
 python3 -m http.server 8877 --directory dist
 ```
 
-Open <http://localhost:8877>. The static site has no external fonts, scripts,
-analytics, or form submissions.
+Open <http://localhost:8877>. No package installation or speech synthesis is needed
+to build or use the course. Extract the offline ZIP before opening `index.html`;
+linked source readings require an internet connection.
 
-## Source
+## Authoring and source
 
-- `course.json`: chapter titles, stories, learning goals, and proposed labs.
-- `site/template.html`: responsive course overview.
-- `site/style.css`: page and print styles.
-- `assets/fonts/`, `FONT-LICENSE.txt`, `licenses/`: bundled Libre Baskerville and
-  Arimo fonts, provenance, and complete OFL notices.
-- `build.py`: validates the curriculum and renders `dist/`.
-- `.github/workflows/pages.yml`: builds pull requests; publishes pushes to `main`.
+- `content.py`: original story, teaching, question, feedback, lab, and case authoring.
+- `course.json`: canonical generated course data used by the build.
+- `build.py`: validation, diagrams, illustrations, chapter and companion rendering.
+- `site/`: templates, styling, and browser interactions.
+- `assets/fonts/`, `licenses/`: unchanged fonts, provenance, and full OFL notices.
+- `audio/`, `production/narration.json`: final recordings and production provenance.
+- `scripts/`: narration text, optional speech generation, PDF export, and packaging.
+- `qa/`: browser and audio checks, with a retained verification summary.
+
+After editing `content.py`, run `python3 content.py`. If visible narration text
+changes, regenerate affected recordings and update the PDFs before publishing.
+`build.py --require-audio` rejects stale scripts and mismatched audio hashes.
+See [narration production](production/README.md).
+
+## Verification
+
+With Playwright and Chromium installed, run against the local preview:
+
+```sh
+python3 qa/check_site.py
+python3 qa/check_audio.py
+python3 qa/check_offline.py
+```
+
+The audio check also requires FFmpeg. The browser check exercises every lesson and
+feedback option, six screen widths, playback, keyboard navigation, exports,
+progress, writing privacy, unavailable storage, and the reading edition without
+JavaScript. These are technical checks, not an expert content or listening review.
+
+To regenerate companions (Playwright required), run the local preview, then:
+
+```sh
+python3 scripts/export_pdfs.py
+python3 build.py --require-audio
+python3 scripts/package_offline.py
+```
 
 ## GitHub Pages
 
-Pages uses **GitHub Actions** as its build source. The workflow builds the site,
-uploads `dist/`, and deploys with the official Pages actions. It also supports
-manual runs. Pull requests build without deploying.
+GitHub Actions validates and builds pushes to `main`, packages the offline course,
+and deploys the artifact using the official Pages actions. Pull requests build
+without deploying. The workflow can also be run manually.
 
-```sh
-gh workflow run pages.yml
-gh run list --workflow pages.yml
-```
+## Design and sources
 
-Inspired by the learning format of
-[Common Ground](https://github.com/snowch/common-ground-social-psychology): stories,
-visual explanations, decisions with feedback, recall, and field practice. This
-repository uses Common Ground's field-guide styling with the same open-licensed
-fonts. It does not copy Common Ground's lesson text, narration, or illustrations.
+[Common Ground](https://github.com/snowch/common-ground-social-psychology) supplies
+the requested visual direction and learning format. Stories, lesson text, diagrams,
+illustrations, and implementation here are original. Further reading links to NHS,
+Centre for Clinical Interventions, and NICE resources; those organisations have not
+reviewed or endorsed this course. See [design notes](docs/design.md),
+[course design](docs/course-plan.md), and [third-party notices](THIRD-PARTY-NOTICES.txt).

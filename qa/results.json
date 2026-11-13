@@ -1,0 +1,95 @@
+{
+  "browser": {
+    "internal_links": 506,
+    "pages": 96,
+    "feedback_choices": 72,
+    "recall_reveals": 24,
+    "labs": 12,
+    "widths": [
+      1440,
+      1024,
+      768,
+      620,
+      390,
+      320
+    ],
+    "console_errors": [],
+    "progress": "pass",
+    "writing_privacy": "pass",
+    "response_export": "pass",
+    "audio_playback": "pass",
+    "no_javascript": "pass",
+    "storage_unavailable": "pass"
+  },
+  "audio": {
+    "clips": 96,
+    "decoded": 96,
+    "minutes": 55.1,
+    "silent_files": 0,
+    "script_hashes": "match",
+    "encoded_hashes": "match",
+    "review_limit": "Technical checks only; no ASR screen or human listening review."
+  },
+  "offline": {
+    "extracted_package": "pass",
+    "recordings": 96,
+    "pdfs": 2,
+    "fonts": "pass",
+    "playback": "pass",
+    "feedback": "pass",
+    "external_requests": 0,
+    "method": "Local HTTP server with all non-local requests blocked. Managed Chrome blocks file:// navigation, so direct-file mode was not browser-tested."
+  },
+  "accessibility": {
+    "engine": "axe-core 4.10.3",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa"
+    ],
+    "pages": [
+      {
+        "url": "/",
+        "violations": []
+      },
+      {
+        "url": "/chapters/one-event.html#p1",
+        "violations": []
+      },
+      {
+        "url": "/chapters/one-event.html#p2",
+        "violations": []
+      },
+      {
+        "url": "/chapters/one-event.html#p3",
+        "violations": []
+      },
+      {
+        "url": "/chapters/one-event.html#p7",
+        "violations": []
+      },
+      {
+        "url": "/chapters/one-event.html#p8",
+        "violations": []
+      },
+      {
+        "url": "/workbook.html",
+        "violations": []
+      },
+      {
+        "url": "/case-final.html",
+        "violations": []
+      },
+      {
+        "url": "/about.html",
+        "violations": []
+      }
+    ]
+  },
+  "pdfs": {
+    "workbook_pages": 33,
+    "reading_pages": 73,
+    "tagged": true,
+    "text_coverage": "All chapter and lab titles, independent cases, and 72 choice feedback explanations checked."
+  }
+}

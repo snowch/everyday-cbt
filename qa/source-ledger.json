@@ -1,0 +1,190 @@
+{
+  "checked": "2026-11-13",
+  "purpose": "Further reading and source support for introductory concepts; no publisher endorsement or practitioner review is implied.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "One event, several experiences",
+      "sources": [
+        {
+          "title": "NHS: cognitive behavioural therapy",
+          "url": "https://www.nhs.uk/tests-and-treatments/cognitive-behavioural-therapy-cbt/"
+        },
+        {
+          "title": "CCI: depression resources — thinking and feeling",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression"
+        }
+      ],
+      "limits": "The five-part map is a teaching aid for describing connections. A brief fictional case cannot establish a complete formulation or explain all causes of distress."
+    },
+    {
+      "chapter": 2,
+      "title": "How a pattern keeps going",
+      "sources": [
+        {
+          "title": "CCI: perfectionism — what keeps it going?",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Perfectionism"
+        },
+        {
+          "title": "CCI: social anxiety — safety behaviours",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Social-Anxiety"
+        }
+      ],
+      "limits": "This example illustrates a possible reinforcement process. Repetitive checking can have different functions; this course does not assess or treat compulsive symptoms."
+    },
+    {
+      "chapter": 3,
+      "title": "Catching the thought",
+      "sources": [
+        {
+          "title": "CCI: depression resources — automatic thoughts and ABC analysis",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression"
+        },
+        {
+          "title": "NHS: reframing unhelpful thoughts",
+          "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/self-help-cbt-techniques/reframing-unhelpful-thoughts/"
+        }
+      ],
+      "limits": "Thought monitoring is an introductory observation skill. It is not an instruction to monitor every thought or analyse distress indefinitely."
+    },
+    {
+      "chapter": 4,
+      "title": "Making room for another interpretation",
+      "sources": [
+        {
+          "title": "NHS: reframing unhelpful thoughts",
+          "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/self-help-cbt-techniques/reframing-unhelpful-thoughts/"
+        },
+        {
+          "title": "CCI: depression resources — detective work and balanced thoughts",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression"
+        }
+      ],
+      "limits": "Thought records are one CBT tool. They are not appropriate for resolving every difficulty, and a plausible alternative is not proof of what another person thinks."
+    },
+    {
+      "chapter": 5,
+      "title": "Moving before motivation arrives",
+      "sources": [
+        {
+          "title": "CCI: depression resources — behavioural strategies and activity scheduling",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression"
+        },
+        {
+          "title": "NICE NG222: treatment options and individual needs",
+          "url": "https://www.nice.org.uk/guidance/ng222/chapter/recommendations"
+        }
+      ],
+      "limits": "Behavioural activation is an established treatment approach when delivered appropriately. This brief activity-planning exercise is introductory education; it is not an evaluated treatment programme."
+    },
+    {
+      "chapter": 6,
+      "title": "Solving what can be solved",
+      "sources": [
+        {
+          "title": "CCI: worry and rumination — problem-solving",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Worry-and-Rumination"
+        },
+        {
+          "title": "CCI: depression resources — problem solving",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression"
+        }
+      ],
+      "limits": "Structured problem-solving is a general skill. Legal, financial, employment, or safeguarding problems may require qualified advice beyond the scope of an introductory course."
+    },
+    {
+      "chapter": 7,
+      "title": "Turning a belief into a question",
+      "sources": [
+        {
+          "title": "CCI: social anxiety — behavioural experiments",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Social-Anxiety"
+        },
+        {
+          "title": "CCI: perfectionism — testing beliefs",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Perfectionism"
+        }
+      ],
+      "limits": "Behavioural experiments are used across CBT approaches. This lesson illustrates the reasoning process; individual experiments may need adaptation and professional guidance."
+    },
+    {
+      "chapter": 8,
+      "title": "Approaching what feels difficult",
+      "sources": [
+        {
+          "title": "NHS: facing your fears",
+          "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/self-help-cbt-techniques/facing-your-fears/"
+        },
+        {
+          "title": "CCI: social anxiety — avoidance, stepladders, and safety behaviours",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Social-Anxiety"
+        }
+      ],
+      "limits": "This chapter introduces gradual approach in safe everyday situations. It is not an exposure protocol for a diagnosed condition and does not replace individual assessment."
+    },
+    {
+      "chapter": 9,
+      "title": "When thinking becomes a loop",
+      "sources": [
+        {
+          "title": "CCI: worry and rumination — attention training and uncertainty",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Worry-and-Rumination"
+        }
+      ],
+      "limits": "Attention practices can be useful, but persistent or intrusive thinking may require tailored support. This lesson does not establish the cause of any individual’s repetitive thoughts."
+    },
+    {
+      "chapter": 10,
+      "title": "The rules underneath",
+      "sources": [
+        {
+          "title": "CCI: depression resources — core beliefs",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression"
+        },
+        {
+          "title": "CCI: perfectionism — rules and assumptions",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Perfectionism"
+        },
+        {
+          "title": "CCI: assertiveness",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Assertiveness"
+        }
+      ],
+      "limits": "Core beliefs and assumptions are formulation concepts, not labels to impose on someone. Deeply distressing beliefs may be better explored with a qualified practitioner."
+    },
+    {
+      "chapter": 11,
+      "title": "Working with a complicated situation",
+      "sources": [
+        {
+          "title": "CCI: assertiveness — communication and boundaries",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Assertiveness"
+        },
+        {
+          "title": "NHS: what CBT involves",
+          "url": "https://www.nhs.uk/tests-and-treatments/cognitive-behavioural-therapy-cbt/"
+        }
+      ],
+      "limits": "The fictional workplace example teaches tool selection, not employment advice. Practical and professional support may be essential; no outcome is guaranteed."
+    },
+    {
+      "chapter": 12,
+      "title": "Becoming your own investigator",
+      "sources": [
+        {
+          "title": "CCI: depression resources — self management",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression"
+        },
+        {
+          "title": "CCI: worry and rumination — self management plan",
+          "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Worry-and-Rumination"
+        },
+        {
+          "title": "NHS: cognitive behavioural therapy",
+          "url": "https://www.nhs.uk/tests-and-treatments/cognitive-behavioural-therapy-cbt/"
+        }
+      ],
+      "limits": "Maintenance planning supports continuing learning. This course has not been tested for prevention of relapse or for clinical outcomes; recurrent symptoms deserve appropriate assessment and support."
+    }
+  ]
+}

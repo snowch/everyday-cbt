@@ -15,3 +15,11 @@ Arimo text, ocean/brass accents, and numbered chapter rows.
 Reference: https://github.com/snowch/common-ground-social-psychology
 No Common Ground lesson text, narration, or illustrations are bundled here.
 The CBT diagram and page implementation were adapted within this repository.
+
+Narration production tools
+--------------------------
+Recordings were generated with Kokoro-82M v1.0 via kokoro-onnx 0.6.1 using
+the af_heart synthetic voice. Model binaries and production dependencies are not
+bundled in the course. Production URLs, model hashes, settings, and review limits
+are in production/narration.json and production/README.md. Recordings are original
+readings of this course; no Common Ground recordings are reused.

@@ -21,3 +21,16 @@ font service requests. See `assets/fonts/manifest.json`, `FONT-LICENSE.txt`, and
 The existing five-part CBT diagram uses the same blue palette and an arched frame
 to reflect the reference cover. It remains a conceptual diagram, with a text
 description for assistive technology.
+
+## Lesson player
+
+Lessons use a white teaching panel with a pale blue illustration area, eight numbered
+page links, and explicit Previous/Next controls. Each page has native recorded-audio
+controls and a recording transcript. Decisions use labelled radio inputs and
+feedback after checking; recall and lab suggestions use native disclosure controls.
+A text equivalent accompanies each diagram.
+
+Practice writing is kept only in the current document. Download and print controls
+provide explicit ways to retain it. Local progress distinguishes pages viewed from
+practice attempts, without a mastery score or reward streak. The complete reading
+edition supports learning without JavaScript.
