@@ -29,9 +29,9 @@ pilot, or clinical outcome study has taken place.
 Allow about 20–30 minutes per chapter, plus field practice and the independent
 cases. This is a design estimate, not timing established in a learner pilot.
 
-Progress stores page IDs and practice-attempt IDs locally. It is not a mastery
-score. Written responses remain in the current tab and are not stored or submitted;
-learners can download them as text before leaving. The course works without
+Progress records pages viewed and practices tried in the current browser.
+Written responses remain on the current chapter, workbook or case page until
+the learner reloads or leaves it. Learners can download their responses as text. The course works without
 browser storage. The reading edition includes all feedback without JavaScript.
 
 ## Build and preview
