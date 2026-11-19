@@ -32,8 +32,8 @@ def add(slug, story, first, concepts, example, transfer, recall, lab, sources, l
 add('one-event',[
     'Alex, Nia, and Jules meet at a Saturday drawing group. One afternoon the organiser writes: “We need to cancel next week.” There is no explanation in the message.',
     'Alex thinks, “Maybe hardly anyone wanted to come,” feels disappointed, and leaves the group chat unopened. Nia thinks, “I have a free afternoon,” feels relieved, and plans some rest. Jules thinks, “Did I cause a problem?” and sends an apologetic message.',
-    'The cancellation is the same. Their interpretations, bodies, feelings, and actions differ. We do not yet know why the organiser cancelled. Begin by describing each person’s experience without deciding whose reaction is justified.'
-], question('Start with what is known','Which statement describes an observation rather than an interpretation?',0,
+    'Everyone reads the same message. Their thoughts, feelings and actions differ. We do not yet know why the organiser cancelled. Begin by describing each person’s experience without deciding whose reaction is justified.'
+], question('Start with what is known','An observation describes what happened. An interpretation suggests what it means. Which statement can you verify directly from the organiser’s message?',0,
     ('The organiser sent a message cancelling next week’s group.','This describes something that could be checked in the message. It leaves the organiser’s reasons open.'),
     ('The organiser no longer likes the group.','This is a possible explanation, but the message does not establish it. Treat it as an interpretation to examine.'),
     ('Jules must have done something wrong.','This is Jules’s worry presented as a fact. Their distress matters, but it does not establish responsibility.')),
@@ -54,10 +54,10 @@ add('one-event',[
     ('I should not feel hurt because it is probably nothing.','This dismisses the feeling and replaces one uncertain explanation with another. Understanding comes before judging the reaction.')),
  [('What distinguishes a thought from an emotion?','A thought carries meaning, such as “I am unwanted.” An emotion names a feeling, such as sadness. Both can be present in the same moment.'),('Why is a five-part map provisional?','It records what is currently understood. The person may remember more, clarify their meaning, or learn new facts. It does not capture every cause.')],
  ('Lab: map one moment',['Use Jules’s cancellation story, or choose a mild everyday situation you are comfortable considering. Keep to one moment. Personal disclosure is optional.'],['What happened that another person could observe?','What thought or image appeared?','Which feelings and bodily sensations were present?','What did the person do next?','What is known, and what remains an interpretation?'],
- 'Jules observed a cancellation, predicted personal blame, felt anxious with a tight stomach, and sent an apology. The reason for cancellation is still unknown.',
+ 'Event — The organiser cancelled next week’s group and gave no reason.\nThought — Jules wondered whether their request had caused it.\nFeeling and body — Jules felt anxious and noticed a tight stomach.\nAction — Jules sent an apology.\nKnown and unknown — The cancellation is confirmed. The reason is unknown.',
  'Check that the event and its meaning are separate. You do not need to change a feeling to complete the map.'),
  [('NHS: cognitive behavioural therapy',NHS),('CCI: depression resources — thinking and feeling',CCI+'Depression')],
- 'The five-part map is a teaching aid for describing connections. A brief fictional case cannot establish a complete formulation or explain all causes of distress.')
+ 'The five-part map is a teaching aid for describing connections. A brief fictional case can illustrate a working explanation and leave other causes open.')
 
 add('patterns',[
     'Alex volunteers to update the drawing group’s non-critical signup list. They check the dates, then check again. For a moment the worry eases. A few minutes later Alex thinks, “What if I missed something?”',
@@ -83,7 +83,7 @@ add('patterns',[
     ('Record the trigger, reassurance, immediate relief, and return of doubt.','This distinguishes a possible maintenance loop from a blanket judgment about support. It also leaves room for a practical communication problem.')),
  [('What does negative reinforcement mean here?','A behaviour becomes more likely because it removes something unpleasant, such as doubt. It does not mean punishment.'),('How does a maintenance explanation differ from an origin story?','It focuses on present triggers and consequences that may sustain a pattern, even when the pattern began for other reasons.')],
  ('Lab: follow the loop',['Use Alex’s signup list. Describe a loop with four parts, then identify one small point that could be investigated.'],['What starts the sequence?','What does Alex do?','What changes immediately?','What happens later, including any cost?','What task-appropriate change could be tested?'],
- 'Doubt → extra check → brief relief → renewed doubt and lost break. Agreeing an ordinary checking standard could make an observable, low-stakes test.',
+ 'Trigger — Alex doubts whether an entry is correct.\nAction — Alex checks the unchanged list again.\nImmediate effect — Doubt briefly eases.\nLater effect — The doubt returns and Alex misses a break.\nPossible test — Agree which checks this signup list needs, then see whether following that standard catches important errors.',
  'Check that your proposed change fits the task. A cycle is a working explanation, not a label for the person.'),
  [('CCI: perfectionism — what keeps it going?',CCI+'Perfectionism'),('CCI: social anxiety — safety behaviours',CCI+'Social-Anxiety')],
  'This example illustrates a possible reinforcement process. Repetitive checking can have different functions; this course does not assess or treat compulsive symptoms.')
@@ -112,7 +112,7 @@ add('automatic-thoughts',[
     ('The fact that Alex attended the group.','Attending is behaviour. It may be relevant to the map, but it is not the image Alex described.')),
  [('Must an automatic thought be a sentence?','No. It can appear as an image, memory, or prediction. Ask what it means to the person.'),('What should you do if no thought is recalled?','Record what is known and leave uncertainty. Do not manufacture a thought or insist that every bodily reaction has a clear verbal cause.')],
  ('Lab: slow down one moment',['Use Jules’s poster story. Find the smallest specific moment at which the emotion changed.'],['What was happening just before the feeling shifted?','What words or image appeared?','What did that thought imply about Jules or the situation?','Which part is a feeling, and which part is a conclusion?','What practical issue still needs attention?'],
- 'The date was pointed out; Jules pictured others shaking their heads; the meaning was “I cannot be relied on.” Shame is the feeling. Correcting the date remains useful.',
+ 'Moment — Someone points out the wrong date on the poster.\nImage — Jules pictures others shaking their heads.\nMeaning — “People cannot rely on me.”\nFeeling and conclusion — Shame is the feeling. Being unreliable is the conclusion Jules draws.\nPractical issue — The poster date still needs correcting.',
  'Use the character’s reported meaning. Avoid inferring a hidden belief without evidence.'),
  [('CCI: depression resources — automatic thoughts and ABC analysis',CCI+'Depression'),('NHS: reframing unhelpful thoughts',THOUGHTS)],
  'Thought monitoring is an introductory observation skill. It is not an instruction to monitor every thought or analyse distress indefinitely.')
@@ -127,21 +127,21 @@ add('interpretations',[
  [lesson('Evidence is more than a feeling',[
     'A thought record separates the event, the thought, the feeling, evidence supporting the thought, evidence that complicates it, and a balanced response. The aim is a fair account, not winning an argument against yourself.',
     'Jules’s feeling is evidence that the situation matters to Jules. It is not direct evidence of Alex’s intention. A previous argument would be relevant evidence; imagining a frown is not an observed response. Evidence may support part of a thought without supporting its strongest version.'
- ],diagram('Separate the layers',('Observation','No reply for six hours'),('Interpretation','Alex is annoyed'),('Supporting facts','A reply came faster yesterday'),('Complicating facts','Late replies also happen'))),
+ ],diagram('Separate the layers',('Observation','No reply for six hours'),('Interpretation','Alex is annoyed'),('Context','Yesterday’s reply was quicker'),('Complicating facts','Late replies also happen'))),
  lesson('A balanced response can remain uncomfortable',[
     'A balanced response should be believable and specific. “I cannot know the reason from the delay alone” may fit better than “Nobody is ever annoyed with me.” It can include a coping statement: “If there is a disagreement, I can ask about it.”',
     'After reviewing the thought, Jules can choose whether an ordinary follow-up is needed. Repeatedly rewriting a record to reach certainty can become another loop. Set a reasonable stopping point and return to the activity you intended to do.'
  ],diagram('A short thought record',('Name','What am I predicting?'),('Check','What facts fit or complicate it?'),('Balance','What can I fairly conclude?'),('Act','What useful step fits now?')))],
  ('Jules writes a balanced response',[
-    'Thought: “Alex is annoyed because I asked.” Supporting fact: Alex replied faster yesterday. Complicating facts: Alex has replied late before; there has been no conflict; Jules has no information about today’s schedule.',
-    'Response: “The delay does not tell me why. If I need an answer by tomorrow, I can say when I need it.” Jules still feels some uncertainty. They decide to work on another part of the drawing instead of sending several apologetic messages.'
+    'Jules thinks Alex is annoyed by the request. Alex replied faster yesterday. That is a change in timing and leaves the reason unknown. Alex has replied late before, there has been no argument, and Jules does not know Alex’s schedule today.',
+    'Jules writes, “The delay does not tell me why. If I need an answer by tomorrow, I can say when I need it.” Jules still feels some uncertainty. They decide to work on another part of the drawing instead of sending several apologetic messages.'
  ]),question('When the evidence changes','Alex later says, “I was irritated by the repeated requests, and I was busy.” How should Jules update the record?',0,
     ('Acknowledge the irritation and discuss a clearer way to ask, without turning it into “Alex rejects me.”','New evidence should change the account. A specific disagreement can call for communication without establishing a global judgment.'),
     ('Ignore the message because CBT means choosing the positive explanation.','A fair account must include unwelcome evidence. CBT skills should not require denying a real disagreement.'),
     ('Conclude that every future delayed reply means irritation.','One clarified event does not settle the meaning of every future delay. Context still matters.')),
  [('What makes a balanced thought different from reassurance?','It fits the available evidence and admits what is unknown. It does not guarantee the preferred outcome.'),('What if the difficult interpretation is partly supported?','Update it, keep the claim specific, and consider problem-solving or communication. A real problem does not justify every broader conclusion.')],
- ('Lab: write a short thought record',['Use Jules’s unanswered message. Write an initial response before looking at the example.'],['Specific event and initial thought','Feeling and optional intensity in your own terms','Facts supporting the thought','Facts that complicate it or remain unknown','A balanced response and a practical next step'],
- 'No reply is certain; annoyance is possible but not established. A fair response admits uncertainty and includes an ordinary deadline-based follow-up if needed.',
+ ('Lab: write a short thought record',['Use Jules’s unanswered message. Write an initial response before looking at the example.'],['Specific event and initial thought','Feeling and optional intensity in your own terms','Facts that directly support the thought, if any','Facts that complicate it or remain unknown','A balanced response and a practical next step'],
+ 'Event and thought — Alex has not replied for six hours. Jules thinks Alex is annoyed.\nFeeling — Jules feels hurt and uncertain.\nSupporting facts — There is no direct evidence of annoyance from the delay. Yesterday’s faster reply is timing information.\nOther facts and unknowns — Alex sometimes replies late. Today’s schedule and the reason for the delay are unknown.\nBalanced response and action — “I don’t know why Alex hasn’t replied. If I need an answer by tomorrow, I can say so in one follow-up.”',
  'Does the response acknowledge difficult possibilities? Does the next step serve a practical purpose rather than seek impossible certainty?'),
  [('NHS: reframing unhelpful thoughts',THOUGHTS),('CCI: depression resources — detective work and balanced thoughts',CCI+'Depression')],
  'Thought records are one CBT tool. They are not appropriate for resolving every difficulty, and a plausible alternative is not proof of what another person thinks.')
@@ -169,8 +169,8 @@ add('activity',[
     ('Double the length of tomorrow’s walk as compensation.','An automatic increase may make the next plan less feasible. There is no exercise debt to repay.'),
     ('Identify the barriers and choose a smaller or differently timed activity that serves the same purpose.','This treats the outcome as information. It preserves the purpose while adapting to circumstances.')),
  [('Why not wait for motivation every time?','A small planned action can create opportunities for interest or connection that waiting may not provide. It is an experiment, not a guarantee.'),('What counts as a useful outcome besides improved mood?','Feasibility, connection, satisfaction, accomplishment, or learning about barriers. Rest can also be a meaningful planned action.')],
- ('Lab: plan one meaningful activity',['Use Nia’s situation or an optional mild everyday example. Choose something affordable, accessible, and compatible with health and responsibilities.'],['What purpose would the activity serve?','What small action, when and where?','What is the smaller version?','What barrier might occur, and how could the plan adapt?','Afterwards: what happened and what will you change?'],
- 'Nia chooses drawing for creativity, after an early shift, for ten minutes with a two-minute version. She reviews feasibility and interest as well as mood.',
+ ('Lab: plan one meaningful activity',['Use Nia’s situation or an optional mild everyday example. Choose something affordable, accessible, and compatible with health and responsibilities.'],['What purpose would the activity serve?','What small action, when and where?','What is the smaller version?','What barrier might occur, and how could the plan adapt?','Use Nia’s six-minute result or record your own if you tried an activity. What happened, and what would you change?'],
+ 'Purpose — Make room for creativity.\nPlan — Sketch at home for ten minutes after an early shift.\nSmaller version — Sketch for two minutes if energy is low.\nBarrier and adaptation — Protect rest after late shifts. Move drawing to a more suitable evening.\nResult and revision — Nia sketched for six minutes and enjoyed choosing a colour. Her mood stayed the same. She plans to change the timing.',
  'The plan should fit the person’s actual resources. If low mood or fatigue is persistent or substantially affects daily life, consider support from a qualified professional rather than relying on this course.'),
  [('CCI: depression resources — behavioural strategies and activity scheduling',CCI+'Depression'),('NICE NG222: treatment options and individual needs','https://www.nice.org.uk/guidance/ng222/chapter/recommendations')],
  'Behavioural activation is an established treatment approach when delivered appropriately. This brief activity-planning exercise is introductory education; it is not an evaluated treatment programme.')
@@ -199,7 +199,7 @@ add('problem-solving',[
     ('Assume rejection is impossible because there is nothing more to do.','Lack of an action does not guarantee a preferred result. The skill is making room for uncertainty, not denying it.')),
  [('What makes a problem statement workable?','It identifies a specific current situation and a realistic goal, rather than judging the whole person.'),('Can a practical solution leave anxiety behind?','Yes. A useful action can address the situation while uncertainty or emotion remains. Feeling calm is not a prerequisite for every decision.')],
  ('Lab: choose a practical next step',['Use Alex’s three tasks. Keep the problem within the person’s influence while recognising where help is needed.'],['State the current problem without a character judgment','Describe a realistic goal','List at least three options','Compare effort, resources, consequences, and fairness','Choose a step, who will act, and a review point'],
- 'Goal: have essential materials ready by Saturday within two evenings of available time. Options: simplify the poster, share collection, or renegotiate timing. Ask the organiser to agree priorities today.',
+ 'Problem — Three jobs need doing before Saturday and Alex has two free evenings.\nGoal — Finish the essential jobs in the time available.\nOptions — Simplify the poster, share the supplies trip or renegotiate timing.\nComparison — A simpler poster saves time. Sharing the trip depends on another volunteer. A later deadline depends on the organiser.\nStep and review — Ask the organiser to set priorities today, then check whether the agreed jobs fit the two evenings.',
  'Check that your plan changes something observable. Identify what remains uncertain rather than adding more planning to chase a guarantee.'),
  [('CCI: worry and rumination — problem-solving',CCI+'Worry-and-Rumination'),('CCI: depression resources — problem solving',CCI+'Depression')],
  'Structured problem-solving is a general skill. Legal, financial, employment, or safeguarding problems may require qualified advice beyond the scope of an introductory course.')
@@ -207,9 +207,9 @@ add('problem-solving',[
 add('experiments',[
     'Jules is unsure which paper size the group needs. “If I ask, the organiser will think I am incompetent,” they predict. Guessing would hide the uncertainty but might produce the wrong order.',
     'Jules wants to investigate the prediction in an ordinary, low-stakes interaction. The question needs to be clear enough that the result can teach them something.'
-],question('Make the prediction observable','Which prediction can Jules actually investigate?',2,
+],question('Make the prediction observable','Which prediction about the organiser’s response could Jules check by listening to the words or observing the actions that follow?',2,
     ('The organiser will secretly judge me.','A private judgment cannot be directly observed in this interaction. Choose indicators while recognising that they cannot reveal every hidden thought.'),
-    ('Asking will feel completely comfortable.','This is a different prediction about Jules’s feelings. An experiment can still be useful while they feel anxious.'),
+    ('Asking will feel completely comfortable.','Jules could observe their own feelings, but this prediction would tell them about comfort and leave the question about the organiser’s response open.'),
     ('If I ask one clear question, the organiser will refuse to answer or explicitly criticise me for asking.','This identifies observable responses. It is a narrower claim than knowing what the organiser privately thinks.')),
  [lesson('An experiment asks a question',[
     'A behavioural experiment compares a prediction with what happens after an action. Specify the situation, the prediction, what you will do, what you will observe, and how different outcomes could be interpreted.',
@@ -227,8 +227,8 @@ add('experiments',[
     ('The experiment failed, so there is nothing to learn.','An unwelcome result can still provide useful information about the situation, the prediction, and possible responses.'),
     ('This proves every request for clarification will be rejected.','One response cannot establish what every person will do in every context. Keep the conclusion at the scale of the evidence.')),
  [('Why specify an observable prediction?','It makes comparison possible and reduces the temptation to interpret any outcome as proof of a hidden judgment.'),('Does a useful experiment have to disconfirm the prediction?','No. Supporting or mixed evidence can inform an updated understanding, a practical change, or a different question.')],
- ('Lab: design a fair test',['Use Jules’s paper order. You can design the experiment without carrying it out. If choosing your own example, keep it ordinary, voluntary, and safe.'],['What specific prediction will you investigate?','What action, setting, and time?','What observations would support or complicate the prediction?','What could make the result hard to interpret?','What happened, what remains unknown, and what would you revise?'],
- 'Ask one clear paper-size question. Record the actual reply. A brief useful answer without explicit criticism complicates the predicted refusal, but does not reveal private thoughts.',
+ ('Lab: design a fair test',['Use Jules’s paper order. You can design the experiment without carrying it out. If choosing your own example, keep it ordinary, voluntary, and safe.'],['What specific prediction will you investigate?','What action, setting, and time?','What observations would support or complicate the prediction?','What could make the result hard to interpret?','If you are planning only, use the reply “A3, thanks.” Which part of the prediction fits this reply, what remains unknown, and what would you revise?'],
+ 'Prediction — The organiser will refuse to answer or criticise Jules for asking.\nAction — Ask once whether the group needs A3 or A4 paper.\nObservations — Record the answer or refusal and any explicit words of criticism.\nLimit — The organiser’s private thoughts are unknown.\nExample result — The organiser says “A3, thanks.” Jules receives an answer without explicit criticism. A future reply may be different.',
  'Check that the test can teach something even if the result is mixed. Feelings matter, but they are not the only outcome measure.'),
  [('CCI: social anxiety — behavioural experiments',CCI+'Social-Anxiety'),('CCI: perfectionism — testing beliefs',CCI+'Perfectionism')],
  'Behavioural experiments are used across CBT approaches. This lesson illustrates the reasoning process; individual experiments may need adaptation and professional guidance.')
@@ -236,7 +236,7 @@ add('experiments',[
 add('approach',[
     'Alex wants to talk to new people at the drawing group. They arrive late, look busy with their phone, and leave before the break. This lowers the immediate chance of an awkward greeting, but also limits the conversations they want.',
     'Alex does not want to deliver a speech. They want a manageable way to practise an ordinary greeting in a group they have chosen to attend.'
-],question('Choose a first step','Which first step best fits Alex’s stated goal and current confidence?',1,
+],question('Choose a first step','Which first step gives Alex a manageable way to practise the greeting they want to try?',1,
     ('Give an unprepared speech to everyone immediately.','A much larger task may not fit the goal or readiness. A useful step can be small and agreed voluntarily.'),
     ('Arrive at the usual time and say hello to one familiar person, then review the experience.','This creates a manageable opportunity for learning and connection. It can be adjusted if it does not fit.'),
     ('Keep avoiding the break until all anxiety has disappeared.','Waiting for no anxiety may leave the same avoidance pattern in place. Alex can consider a manageable step with some discomfort.')),
@@ -257,7 +257,7 @@ add('approach',[
     ('Consider safety, boundaries, and appropriate support before any decision about returning.','A real threat calls for a contextual response. Nia does not owe the group an exposure exercise.')),
  [('Why can avoidance maintain a fear?','It may reduce immediate discomfort while limiting opportunities to test predictions or learn how to cope.'),('How is an accommodation different from a safety behaviour?','An accommodation may provide necessary access or protection. Function and context matter; the same outward action cannot be classified from appearance alone.')],
  ('Lab: build a voluntary ladder',['Use Alex’s ordinary greeting goal. Designing a fictional ladder is enough. Do not use this exercise for dangerous situations, trauma memories, or severe symptoms without appropriate professional support.'],['What chosen goal would the steps serve?','What is a manageable first step?','What two or three later steps might fit?','Which supports or accommodations should remain?','What learning would you review, and how could you adjust the pace?'],
- 'Alex starts with a familiar greeting, later adds a question, and eventually considers a new member. Review observed responses and coping, not whether anxiety vanished.',
+ 'Goal — Have more everyday conversations at the group.\nFirst step — Greet a familiar member.\nLater steps — Ask a familiar member a question, then consider greeting a new member.\nSupport — Keep any communication and access aids Alex needs.\nReview — Record whether the greeting was possible and what happened. Alex can repeat or adjust the step.',
  'Each step should remain voluntary and fit the person’s context. A harder step is not automatically a better one.'),
  [('NHS: facing your fears','https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/self-help-cbt-techniques/facing-your-fears/'),('CCI: social anxiety — avoidance, stepladders, and safety behaviours',CCI+'Social-Anxiety')],
  'This chapter introduces gradual approach in safe everyday situations. It is not an exposure protocol for a diagnosed condition and does not replace individual assessment.')
@@ -285,8 +285,8 @@ add('thinking-loops',[
     ('Decide on a proportionate apology, then notice and redirect repeated self-condemnation.','A practical repair and flexible attention can both be useful. Neither requires a guarantee about the other person’s response.'),
     ('Keep replaying until no shame remains before acting.','Waiting for a feeling to disappear can delay a reasonable action and keep the loop going.')),
  [('How can you distinguish reflection from rumination?','Ask whether the thinking produces new information, a concrete decision, or useful learning. Repeated abstract self-judgment often does not.'),('What if a thought returns after redirecting attention?','Notice it and return again. The goal is flexible engagement, not proving that a thought can never appear.')],
- ('Lab: notice, decide, return',['Use Nia’s joke example or a mild everyday replay. You may stop or use the fictional story if personal reflection becomes uncomfortable.'],['What is the repeated question?','Is there new information or a practical action?','If needed, what one proportionate step fits?','What present activity will receive attention?','What happened when the thought returned?'],
- 'Nia identifies a repeated self-judgment without new facts, chooses one listening intention, and returns to dinner. The thought can return without requiring another full analysis.',
+ ('Lab: notice, decide, return',['Use Nia’s joke example or a mild everyday replay. You may stop or use the fictional story if personal reflection becomes uncomfortable.'],['What is the repeated question?','Is there new information or a practical action?','If needed, what one proportionate step fits?','What present activity will receive attention?','In the story, Nia’s memory returns twice. What does she do, and how could she tell whether it helped her rejoin the conversation?'],
+ 'Repeated question — “Why did I say that?”\nCheck — The quiet response supplies no new facts about whether anyone was hurt.\nAction — Nia decides to listen more carefully next time.\nChosen activity — Nia returns to the conversation at dinner.\nResult — The thought returns twice. Each time Nia notices it and rejoins the conversation.',
  'Check that redirecting attention does not bypass an important practical problem. Avoid judging success by whether the mind stayed blank.'),
  [('CCI: worry and rumination — attention training and uncertainty',CCI+'Worry-and-Rumination')],
  'Attention practices can be useful, but persistent or intrusive thinking may require tailored support. This lesson does not establish the cause of any individual’s repetitive thoughts.')
@@ -315,7 +315,7 @@ add('rules',[
     ('No beliefs can ever influence behaviour.','Beliefs may influence behaviour, but recognising that possibility is different from knowing which belief is present.')),
  [('How does a rule differ from a momentary thought?','A rule applies across situations, often as a should, must, or if-then statement. A thought occurs in a particular moment.'),('What makes a more flexible rule useful?','It is believable, preserves an important value, allows context and limits, and suggests an action that can be tested.')],
  ('Lab: turn a demand into a guide',['Use Jules’s commitments. You can work entirely with this fictional example.'],['What repeated should, must, or if-then rule appears?','What value or need might it be trying to protect?','What are its benefits and costs in this situation?','What more flexible guide fits the evidence?','What small action could test it, and what would you review?'],
- 'Rule: never disappoint anyone. Value: care and reliability. Flexible guide: be considerate and honest about capacity. Test: accept one feasible task and decline another respectfully.',
+ 'Rule — “If I disappoint someone, I am selfish.”\nValue — Jules wants to be considerate and reliable.\nBenefit and cost — Accepting tasks may avoid an awkward refusal. Taking on too much makes it harder to keep promises.\nFlexible guide — “I can be considerate and honest about what I have time for.”\nTest — Offer to bring paper and decline the extra session. Review what happened and whether Jules could keep the commitment.',
  'A flexible guide should not become another absolute demand to perform perfectly. Leave room for mixed reactions and learning.'),
  [('CCI: depression resources — core beliefs',CCI+'Depression'),('CCI: perfectionism — rules and assumptions',CCI+'Perfectionism'),('CCI: assertiveness',CCI+'Assertiveness')],
  'Core beliefs and assumptions are formulation concepts, not labels to impose on someone. Deeply distressing beliefs may be better explored with a qualified practitioner.')
@@ -323,7 +323,7 @@ add('rules',[
 add('context',[
     'At work, Nia is repeatedly assigned unpopular late shifts despite an agreed rotation. When she asks about it, her manager dismisses the concern. Nia thinks, “I am powerless, so there is no point speaking up.”',
     'The rota provides evidence of a real imbalance. At the same time, “there is no possible action” is a broader conclusion. Nia needs an approach that respects the actual working conditions and the possible costs of challenging them.'
-],question('Choose the starting point','What should happen before asking Nia to reinterpret the situation more positively?',1,
+],question('Choose the starting point','Which response takes the documented rota problem and Nia’s circumstances into account?',1,
     ('Assume the manager must have a good reason.','That invents a reassuring explanation and can minimise the documented imbalance.'),
     ('Acknowledge the evidence and explore Nia’s priorities, safety, support, and practical options.','This keeps the real circumstances central. It also allows specific thoughts to be examined without denying unfairness.'),
     ('Tell Nia that feeling powerless proves she has no choices.','The feeling is understandable but does not by itself establish every possible option. Options may still be limited and costly.')),
@@ -344,7 +344,7 @@ add('context',[
     ('Address the missed deadline and consider a boundary or support about the insult.','This distinguishes a practical responsibility from unacceptable treatment. Several tools may fit different parts of the same event.')),
  [('Why include the environment in a CBT formulation?','Real demands, resources, discrimination, power, and support affect experiences and options. A thought-only account can miss important causes and constraints.'),('Can checking self-blame and seeking practical support happen together?','Yes. Examining an unsupported personal conclusion does not require denying a real problem or delaying appropriate support.')],
  ('Lab: choose the tool, explain the fit',['Use Nia’s rota example. Consider several responses rather than assuming one tool must solve everything.'],['What facts indicate a real problem?','What interpretation goes beyond those facts?','Which parts are within Nia’s influence?','What practical support or advice might be appropriate?','What first step fits Nia’s priorities and possible risks?'],
- 'The rota supports an imbalance, not the conclusion that Nia deserves it. Gathering records and privately checking available support may be a first step, subject to her circumstances.',
+ 'Facts — The rota departs from an agreed shift rotation and the manager dismisses Nia’s concern.\nInterpretation — “There is no possible action” is broader than those facts.\nInfluence — Nia can consider gathering records or checking support. The manager’s response remains unknown.\nSupport — A trusted staff representative may be able to explain options.\nFirst step — If it fits her circumstances, privately ask about those options before deciding whether to raise the issue formally.',
  'Does the plan respect actual constraints? Do not treat a person’s inability to change a structural problem as a failure to use CBT.'),
  [('CCI: assertiveness — communication and boundaries',CCI+'Assertiveness'),('NHS: what CBT involves',NHS)],
  'The fictional workplace example teaches tool selection, not employment advice. Practical and professional support may be essential; no outcome is guaranteed.')
@@ -373,7 +373,7 @@ add('continuing',[
     ('Use thought challenging for every feeling regardless of the cause.','Different problems call for different responses. Rest, practical help, or attention shifting may fit better.')),
  [('What should a maintenance plan contain?','A short description of the pattern, early signs, feasible responses, a review point, and sources of support.'),('What can show learning even when a difficulty returns?','Earlier recognition, more specific understanding, a more flexible action, or seeking useful support. Absence of all difficult feelings is not the standard.')],
  ('Lab: a plan for the next difficult week',['Use Alex’s pattern, or create an optional personal summary. Keep it brief and realistic. Then try the final case to practise choosing tools without a chapter label.'],['What pattern and trigger do you want to recognise?','What two early signs are observable?','What small first response has a clear purpose?','Who or what could provide support?','When will you review, and what would tell you more help is needed?'],
- 'Alex notices repeated checks and missed breaks, revisits the task standard, reviews capacity, and seeks support if disruption persists. They review after the next ordinary task.',
+ 'Pattern and trigger — A busy week disrupts routines and Alex starts checking the signup list repeatedly.\nEarly signs — Reopening the unchanged list and missing planned breaks.\nFirst response — Revisit the agreed checking standard so Alex knows when the task is complete.\nSupport — Ask the organiser to clarify priorities. Seek qualified support if the pattern persists or disrupts daily life.\nReview — After the next ordinary task, note whether the new plan met the agreed standard and left time for a break.',
  'Use this as a flexible guide. A return of difficulty is information, not a moral failure or a requirement to cope alone.'),
  [('CCI: depression resources — self management',CCI+'Depression'),('CCI: worry and rumination — self management plan',CCI+'Worry-and-Rumination'),('NHS: cognitive behavioural therapy',NHS)],
  'Maintenance planning supports continuing learning. This course has not been tested for prevention of relapse or for clinical outcomes; recurrent symptoms deserve appropriate assessment and support.')
@@ -383,26 +383,26 @@ key_messages = {
     'one-event': [
         [
             'The organiser cancels next week’s drawing group without giving a reason.',
-            'Alex feels disappointed and withdraws; Nia feels relieved and plans rest.',
-            'Jules wonders, “Did I cause this?” and sends an apology.',
-            'One event can carry different meanings and lead to different responses.',
+            'Alex thinks people may not want to come, feels disappointed and leaves the chat unopened.',
+            'Nia sees a free afternoon and plans to rest. Jules wonders if they caused the cancellation and sends an apology.',
+            'An observation describes what happened. An interpretation is what someone thinks it means.',
         ],
         [
-            'Map five parts: situation, thoughts, emotions, bodily sensations, and behaviour.',
-            'Thoughts carry meaning; emotions name feelings; behaviour is what someone does.',
+            'Map five parts of one moment. The situation is what happened. A thought gives it meaning, and an emotion names a feeling.',
+            'Bodily sensations include a tight stomach or a racing heart. Behaviour is what someone does.',
             'Each part can influence the others.',
-            'The map is provisional: health and circumstances also matter.',
+            'Use the map as a first account you can revise. Health and circumstances also matter.',
         ],
         [
-            'Start with one specific moment, rather than a whole difficult week.',
-            'Separate what happened from what it meant to the person.',
+            'Start with one moment, such as reading the message at three o’clock.',
+            '“I feel rejected” can combine sadness with the thought “They don’t want me there.” Write the feeling and thought separately.',
             'Ask about their experience; leave missing information open.',
             'A useful next step may be practical, such as checking a new date.',
         ],
         [
-            'Jules links the cancellation to a prediction of blame, anxiety, and a tight stomach.',
+            'Jules thinks their request for different materials might have annoyed the organiser. They feel anxious and notice a tight stomach.',
             'An apology follows before the organiser’s reason is known.',
-            '“I predict I caused this” leaves room for uncertainty; it does not require feeling calm.',
+            '“I’m predicting my request caused this” records the concern and leaves the reason open.',
         ],
     ],
     'patterns': [
@@ -413,63 +413,63 @@ key_messages = {
             'Investigate what checking achieves now and what it costs later.',
         ],
         [
-            'Negative reinforcement: removing discomfort can make a behaviour more likely to recur.',
+            'Negative reinforcement means an action may become more likely if it removes something unpleasant, such as doubt.',
             'Brief relief may help keep Alex’s checking loop going.',
-            'Some checking is useful; assess the task, function, and cost of extra repetition.',
+            'A first check can catch a real error. Ask what later checks add and what they cost, such as time for a break.',
         ],
         [
             'A maintenance cycle describes what may keep a pattern going now.',
-            'It does not establish how the pattern began or explain every cause.',
-            'Choose a task-appropriate checking standard before testing a change.',
+            'A separate question is how the pattern began.',
+            'Alex can agree with the organiser which checks the signup list needs before testing a change.',
             'Genuine safety requirements still apply.',
         ],
         [
-            'Across three occasions, Alex notices brief relief followed by renewed doubt.',
-            'For this signup list, Alex and the organiser agree one source check and reviews of changed entries.',
-            'Observe the outcome; revise the process if the agreed standard misses important errors.',
+            'On three occasions, a check brings brief relief. Doubt returns even though Alex has no new information.',
+            'Alex and the organiser agree to check names against the original list once and review any changed entries.',
+            'After following the agreed checks, Alex can see whether the list still contains important errors and adjust the process if needed.',
         ],
     ],
     'automatic-thoughts': [
         [
-            'A wrong date on a poster is pointed out; Jules then becomes quiet.',
+            'When someone points out the wrong date on the poster, Jules says “No problem” and grows quiet.',
             'Jules pictures everyone shaking their heads and thinks, “I always let people down.”',
             'The specific mistake and its wider personal meaning are different things.',
         ],
         [
-            'Automatic thoughts can be words, images, memories, or predictions.',
+            'Automatic thoughts arrive quickly, before you deliberately think something through. They can be words, images, memories or predictions.',
             'Return to the moment when the feeling changed and ask what it meant.',
-            'If no thought is recalled, leave the space open rather than inventing one.',
+            'If no thought comes to mind, write down what you remember and leave the rest open.',
         ],
         [
-            '“I had the thought that I am a failure” distinguishes an experience from a fact.',
-            'Thinking-pattern labels can guide inquiry; they do not prove someone irrational.',
+            '“I had the thought that I am a failure” names a thought so you can examine whether the evidence supports it.',
+            'Overgeneralising means drawing a broad conclusion from limited evidence. Mind-reading means assuming you know what someone else thinks.',
             'Keep a specific error separate from a broad judgment about the person.',
         ],
         [
             'Jules identifies shame as the feeling and “People cannot rely on me” as the thought.',
             'Tense shoulders and withdrawing are other parts of the experience.',
-            'Correct the poster and examine the broader prediction about reliability.',
+            'There are two tasks for Jules. Correct the poster date and ask what the mistake actually shows about reliability.',
         ],
     ],
     'interpretations': [
         [
             'Alex has not replied to Jules’s drawing question for six hours.',
-            'Jules predicts annoyance and starts drafting an apology.',
-            'Alex sometimes replies late; today’s reason remains unknown.',
+            'Jules feels hurt, thinks Alex is annoyed by the question and begins writing an apology.',
+            'There has been no argument. Alex replied faster yesterday and sometimes replies late. Today’s reason is unknown.',
         ],
         [
-            'A thought record separates the event, thought, feeling, and relevant evidence.',
-            'Feeling hurt tells us the situation matters; it does not reveal Alex’s intention.',
-            'Consider supporting facts, complicating facts, and what is still unknown.',
+            'A thought record separates the event, thought and feeling. It records relevant facts and what you can fairly conclude.',
+            'Feeling hurt tells us the delay matters to Jules. Alex’s intention remains unknown.',
+            'A disagreement would be relevant evidence if it had happened. A slower reply only shows a change in timing.',
         ],
         [
             'A balanced response should be specific, believable, and open to uncertainty.',
-            'It can include coping: “If there is a disagreement, I can ask about it.”',
-            'Choose a useful action rather than repeatedly rewriting the record to reach certainty.',
+            'It can say what you would do if the concern proved true. “If there is a disagreement, I can ask about it.”',
+            'Decide whether an ordinary follow-up would help. Stop reviewing the record once you have a useful next step.',
         ],
         [
-            'A faster reply yesterday supports a concern, but late replies have happened before.',
-            'Jules concludes: “The delay alone does not tell me why.”',
+            'Alex’s reply was faster yesterday, and late replies have happened before. The facts establish the delay and leave the reason open.',
+            'Jules concludes, “The delay alone does not tell me why.”',
             'If an answer is needed by tomorrow, one ordinary follow-up can state that deadline.',
         ],
     ],
@@ -477,30 +477,30 @@ key_messages = {
         [
             'After tiring shifts, Nia stops sketching and declines a walk.',
             'Some rest helps, but her week now offers fewer valued activities.',
-            'Waiting for motivation makes it harder to restart; exhaustion is not a character flaw.',
+            'Nia is waiting to feel motivated. She wants to find out whether a small activity fits her energy.',
         ],
         [
-            'Behavioural activation connects activity patterns with their consequences.',
+            'Behavioural activation looks at what happens after activities and plans small actions linked to what someone values.',
             'A manageable action can create opportunities for connection, satisfaction, or accomplishment.',
             'Motivation may follow action; an immediate mood improvement is not guaranteed.',
             'Include rest and respect health, resources, and responsibilities.',
         ],
         [
-            'Specify a meaningful action, a time, and a place.',
+            'Choose an action, a time and a place. Nia plans ten minutes of sketching at home after an early shift.',
             'Plan a smaller version that fits a low-energy day.',
             'Review feasibility and barriers as well as mood.',
         ],
         [
-            'Nia sketches for six minutes: mood is unchanged, but choosing a colour is enjoyable.',
-            'She learns that the activity fits better after an early shift.',
+            'Nia sketches for six minutes. Her mood stays the same and she enjoys choosing a colour.',
+            'She notices she planned the activity too close to a late shift and decides to try an earlier evening next time.',
             'Keep what is worthwhile, adapt the timing, and protect needed rest.',
         ],
     ],
     'problem-solving': [
         [
             'Alex has three tasks to finish before Saturday and only two free evenings.',
-            'A worry about seeming unreliable is mixed with a real capacity problem.',
-            'Examining a prediction will not create another evening; practical choices are needed.',
+            'Alex worries about seeming unreliable. Three tasks and two evenings are also a practical scheduling problem.',
+            'Which of the tasks could change in scope, timing or who does the work?',
         ],
         [
             'A practical problem has a current situation and a possible action.',
@@ -514,8 +514,8 @@ key_messages = {
             'Some problems need specialist support or collective action.',
         ],
         [
-            'Alex estimates the work and identifies options: simplify, share, or renegotiate timing.',
-            'The organiser agrees a simpler poster and shared supply collection.',
+            'Alex estimates one evening for the poster, half an evening for the list and another evening for supplies.',
+            'The organiser agrees to simplify the poster and share the supplies trip, two changes that make the workload more feasible.',
             'The practical plan can improve even while worry remains.',
         ],
     ],
@@ -523,17 +523,17 @@ key_messages = {
         [
             'Jules needs to know which paper size to order.',
             'They predict that asking will make the organiser think they are incompetent.',
-            'An ordinary clarification could test a narrower, observable prediction.',
+            'Jules plans to ask one ordinary question and pay attention to what the organiser says or does.',
         ],
         [
             'A behavioural experiment compares a specific prediction with an observed outcome.',
             'Plan the action, observations, and how different results could be interpreted.',
-            'Use an ethical, low-stakes situation; seek information rather than a bravery score.',
+            'Use an ordinary, voluntary situation where no one is put at risk. The goal is to gather useful information.',
         ],
         [
             'Warm, brief, awkward, and critical replies support different conclusions.',
             'A reply cannot reveal every private opinion.',
-            'Record what happened, compare it fairly, and revise the next question.',
+            'Write down the reply. Did it include a refusal or criticism? What question could you investigate next?',
         ],
         [
             'Jules asks “A3 or A4?” and receives “A3, thanks.”',
@@ -543,9 +543,9 @@ key_messages = {
     ],
     'approach': [
         [
-            'Alex wants to connect, but arrives late, hides behind a phone, and leaves before the break.',
-            'Avoiding greetings brings immediate relief and fewer opportunities for conversation.',
-            'The chosen goal is one manageable greeting, not an unprepared speech.',
+            'Alex wants to talk to people. Arriving late, looking busy on their phone and leaving before the break make a greeting less likely.',
+            'Avoiding greetings reduces Alex’s chances of an awkward moment and also limits chances to talk.',
+            'Alex chooses to practise one manageable greeting.',
         ],
         [
             'Avoidance can reduce discomfort while limiting opportunities to learn.',
@@ -554,53 +554,53 @@ key_messages = {
         ],
         [
             'Choose the pace personally; repeat or adapt a step when useful.',
-            'A safety behaviour may prevent learning about a feared outcome.',
+            'A safety behaviour is an action meant to prevent a feared outcome. It can make it harder to tell what would happen without it.',
             'Preserve necessary accommodations, access aids, and genuine safety precautions.',
-            'Judge an action by its function and context, not its appearance.',
+            'Ask what the action does for this person in this situation. A phone can be cover or a way to make communication accessible.',
         ],
         [
             'Alex greets a familiar member despite a shaky voice and has a brief exchange.',
             'The learning is that a greeting was possible with some anxiety.',
-            'Alex chooses to repeat the step; zero anxiety and a fixed timetable are not required.',
+            'Alex chooses to repeat the greeting and decides when another step might fit.',
         ],
     ],
     'thinking-loops': [
         [
             'Nia repeatedly replays a joke that received little response.',
             'The question “Why did I say that?” produces no new information or decision.',
-            'The replay is taking time from rest; useful reflection needs a different purpose.',
+            'The replays take time away from rest. Nia wants to tell whether there is a useful action to take.',
         ],
         [
-            'Worry often looks ahead; rumination often revisits the past or the self.',
+            'Worry often concerns what could happen. Rumination means repeatedly going over the past or what it says about you.',
             'Ask whether thinking produces new information or a useful decision.',
-            'A returning thought is not a personal failure; check whether an action is needed.',
+            'When a thought returns, notice it and check for one useful action.',
         ],
         [
             'Notice the replay and check for a practical action.',
             'Then return attention to a chosen activity, even if the thought remains.',
-            'Flexible attention is the goal, rather than forcing the mind to stay empty.',
+            'Flexible attention means returning to the activity you chose when your attention wanders again.',
         ],
         [
             'Nia checks for a specific hurt that needs repair and identifies no new evidence of one.',
-            'She chooses one listening intention and returns to dinner.',
+            'She decides to listen more carefully at the next group and then returns to the conversation at dinner.',
             'When the memory returns, she redirects attention again rather than restarting the whole analysis.',
         ],
     ],
     'rules': [
         [
             'Jules accepts several tasks despite a full week, then cancels at the last minute.',
-            'The rule “If I disappoint someone, I am selfish” drives overcommitment.',
-            'Investigate what the rule protects and what its rigidity costs.',
+            'The rule “If I disappoint someone, I am selfish” may help explain why Jules takes on too many tasks.',
+            'Ask what the rule might protect, such as connection, and what it costs, such as making realistic commitments harder.',
         ],
         [
-            'An automatic thought belongs to a moment; a conditional assumption expresses a wider rule.',
+            'An automatic thought belongs to one moment. A conditional assumption is a wider rule, such as “If I refuse, I will lose people.”',
             'A core belief is a broader view of self, others, or the world.',
-            'These are possible formulation levels, not hidden meanings to impose on someone.',
+            'A formulation is a working explanation of how a pattern fits together. Check it with the person and leave room for other explanations.',
         ],
         [
             'Keep the value of reliability while softening an impossible demand.',
-            'Try a flexible guide: “I can be considerate and honest about capacity.”',
-            'Build evidence through small actions; a new sentence alone may not change a long-standing belief.',
+            'Jules tries a flexible guide. “I can be considerate and honest about what I have time to do.”',
+            'Try a small action that fits the guide and observe the result. A long-standing belief may take more time and support.',
         ],
         [
             'Jules agrees to bring paper but declines to cover an extra session.',
@@ -610,8 +610,8 @@ key_messages = {
     ],
     'context': [
         [
-            'Nia’s rota repeatedly departs from an agreed shift rotation.',
-            'A real imbalance is different from the broader conclusion “There is no possible action.”',
+            'Nia’s work schedule, or rota, repeatedly assigns her unpopular late shifts outside the agreed rotation. Her manager dismisses her concern.',
+            'The rota shows an imbalance. Nia’s options may be limited and she does not yet know what support exists.',
             'Consider her priorities, constraints, safety, and available support.',
         ],
         [
@@ -623,19 +623,19 @@ key_messages = {
         [
             'Separate known facts, unknown outcomes, and possible influence.',
             'Nia cannot control her manager’s response; her options may be constrained.',
-            'Finding out what support exists can be a useful step without promising a solution.',
+            'Nia might check what support exists before deciding whether to act. What is available depends on her workplace.',
         ],
         [
             'Nia checks the rota and agreement, then privately explores support options.',
-            'The imbalance does not establish that she deserves unfair treatment.',
+            'The rota shows how shifts were allocated. It gives Nia no reason to blame herself.',
             'Address the circumstances and examine self-blame together.',
         ],
     ],
     'continuing': [
         [
             'A busy week disrupts Alex’s routines, and repeated checking returns.',
-            '“I am back at the beginning” overlooks earlier recognition and existing skills.',
-            'A returning pattern and losing all learning are different things.',
+            'Alex thinks “I am back at the beginning.” This time they notice the pattern earlier and remember a way to respond.',
+            'A pattern can return even when someone has learned to recognise it sooner.',
         ],
         [
             'A maintenance plan names the pattern and its early signs.',
@@ -649,8 +649,8 @@ key_messages = {
         ],
         [
             'Alex’s early signs are repeated checks of an unchanged list and missed breaks.',
-            'First steps: revisit the task standard and review the week’s capacity.',
-            'Use support and review the outcome; the plan does not promise that doubt will disappear.',
+            'Alex plans to check which work the task requires and what is feasible this week.',
+            'Alex can ask the organiser to clarify priorities. After the next task, they’ll review what happened and adjust the plan.',
         ],
     ],
 }
@@ -660,21 +660,39 @@ for slug, summaries in key_messages.items():
     for page_index, bullets in zip((0, 2, 3, 4), summaries):
         chapters[slug]['pages'][page_index]['key_messages'] = bullets
 
+# The comparison follows the worked response on screen and in print.
+lab_comparisons = {
+    'one-event': 'Compare your event and thought fields. Which words describe what the message confirms? Which words describe Jules’s explanation?',
+    'patterns': 'Compare your immediate and later effects. How could brief relief make another check seem useful even when the list stays the same?',
+    'automatic-thoughts': 'Compare your feeling and conclusion fields. Which describes Jules’s experience, and which claim goes beyond the facts of the poster error?',
+    'interpretations': 'Compare your evidence and response fields. Does your response leave Alex’s reason open while naming a next step that would help with the drawing?',
+    'activity': 'Compare your purpose and result fields. What made the activity worthwhile for Nia, and what did the result suggest changing?',
+    'problem-solving': 'Compare your chosen step and review point. What would you look for to decide whether the new plan actually fits two evenings?',
+    'experiments': 'Compare your prediction and result. Which part of the predicted response occurred, and what could the reply never tell you about the organiser’s private opinion?',
+    'approach': 'Compare your goal and first step. What could Alex learn even if their voice still shakes? Which supports would help them take part?',
+    'thinking-loops': 'Compare your action and result fields. What did Nia do about the possible concern, and what showed she was able to rejoin dinner?',
+    'rules': 'Compare your value, flexible guide and test. How could Jules protect reliability and learn whether the new commitment fits their week?',
+    'context': 'Compare the facts, possible influence and first step. Which details make it a real workplace problem, and what information would help Nia decide what to do?',
+    'continuing': 'Compare your early signs, first response and review point. Would each be specific enough for Alex to recognise or use during a busy week?',
+}
+for slug, question_text in lab_comparisons.items():
+    chapters[slug]["pages"][-1]["comparison"] = question_text
+
 course['cases']=[
- {'id':'case-pattern','title':'Checkpoint 1: the unread invitation','after':4,
-  'story':['Rowan receives an invitation to a community book group. They think, “I will have nothing useful to say,” feel tense, and leave it unanswered. Not replying brings relief that evening. A week later Rowan feels more isolated and believes they would not fit in.'],
-  'tasks':[('Map the moment','Separate the event, thought, emotion, body information, and behaviour. What is missing?','Event: invitation. Thought: nothing useful to say. Feeling: tension or anxiety; bodily sensations were not specified. Behaviour: no reply. Ask rather than invent the missing bodily details.'),('Explain a possible cycle','How might the short-term consequence relate to what happens later?','Avoiding the reply brings relief but prevents new information and a possible connection. Later isolation may strengthen the initial prediction. This is a hypothesis, not proof of the only cause.'),('Write a balanced account','What can Rowan fairly conclude from the available facts?','The invitation does not establish how a visit would go. Rowan can acknowledge uncertainty and consider a small information-gathering step if participation fits their interests.')],
+ {'id':'case-pattern','title':'Checkpoint 1 · The unread invitation','after':4,
+  'story':['Rowan receives an invitation to a community book group. They think, “I will have nothing useful to say,” notice tension without describing where they feel it, and leave it unanswered. Not replying brings relief that evening. A week later Rowan feels more isolated and believes they would not fit in.'],
+  'tasks':[('Map the moment','In Your response, list the event, thought and action. What does “tense” tell you about Rowan’s experience? Which details would you still ask about?','The invitation is the event. “I will have nothing useful to say” is Rowan’s thought. Leaving the invitation unanswered is the action. Rowan reports tension. Ask what emotion they felt and what physical sensations they noticed before filling in either detail.'),('Explain a possible cycle','Compare how Rowan feels that evening and a week later. How might leaving the invitation unanswered connect those two experiences?','Avoiding the reply brings relief but prevents new information and a possible connection. Later isolation may strengthen the initial prediction. This is a hypothesis, not proof of the only cause.'),('Write a balanced account','What can Rowan fairly conclude from the available facts?','The invitation does not establish how a visit would go. Rowan can acknowledge uncertainty and consider a small information-gathering step if participation fits their interests.')],
   'rubric':['Event and interpretation are separate.','The cycle includes immediate and later consequences.','Missing information stays open rather than being invented.']},
- {'id':'case-experiment','title':'Checkpoint 2: asking at the library','after':8,
+ {'id':'case-experiment','title':'Checkpoint 2 · Asking at the library','after':8,
   'story':['Rowan wants to ask a librarian whether a beginner book group is suitable. They predict, “The librarian will laugh or say my question is stupid.” Rowan usually asks a friend to speak for them. The library is an ordinary setting they have safely visited before.'],
-  'tasks':[('Design the experiment','Specify one action and observable outcomes. What support should remain?','Rowan could choose to ask one clear suitability question. Observe words and actions, not hidden opinions. Preserve any communication accommodations; consider voluntarily changing only the friend speaking on their behalf if that fits Rowan’s needs.'),('Interpret a brief response','The librarian says, “Yes, beginners are welcome,” then turns to another visitor. What follows?','The predicted explicit ridicule did not occur in this trial. A brief answer does not establish a private opinion. Rowan obtained information while possibly still anxious.'),('Interpret an awkward response','Instead the librarian says, “It is on the sign.” How would your conclusion change?','This may be unhelpful or brusque, but it is not identical to explicit ridicule. Note the exact response, consider its limits, and decide whether another source of information or a different next step is useful.')],
+  'tasks':[('Design the experiment','Write the question Rowan could choose to ask. What words or actions would count as ridicule? What support needs to stay in place?','Rowan could choose to ask one clear suitability question. Observe words and actions, not hidden opinions. Preserve any communication accommodations; consider voluntarily changing only the friend speaking on their behalf if that fits Rowan’s needs.'),('Interpret a brief response','The librarian says, “Yes, beginners are welcome,” then turns to another visitor. Did the predicted ridicule occur? What can Rowan conclude about the visit, and what is still unknown?','The predicted explicit ridicule did not occur in this trial. A brief answer does not establish a private opinion. Rowan obtained information while possibly still anxious.'),('Interpret an awkward response','Now imagine the librarian says, “It is on the sign.” Compare those words with Rowan’s prediction of laughter or an insult. What would you conclude from this version, and what could Rowan do next?','This may be unhelpful or brusque, but it is not identical to explicit ridicule. Note the exact response, consider its limits, and decide whether another source of information or a different next step is useful.')],
   'rubric':['The prediction is observable.','Support and access needs are respected.','Both favourable and awkward results permit specific learning.']},
- {'id':'case-final','title':'Final case: the first book-group session','after':12,
+ {'id':'case-final','title':'Final case · The first book-group session','after':12,
   'story':['Rowan attends the group and answers one question briefly. Another participant interrupts twice. Afterwards the organiser thanks Rowan for coming. At home Rowan thinks, “Nobody wants me there,” replays the interruptions, and decides never to return.','Rowan also has a genuine scheduling problem: the next meeting overlaps a regular care commitment. They feel tired and have stopped a short reading routine they used to enjoy.','New information arrives: the organiser says interruptions have affected other participants too and proposes a turn-taking format. The organiser cannot change the next meeting’s time.'],
-  'tasks':[('Map without mind-reading','Separate observations, interpretations, feelings, actions, and unknowns.','Observations include two interruptions and thanks from the organiser. “Nobody wants me” is broader than the evidence. Fatigue is reported; ask about other bodily and emotional experiences rather than inventing them.'),('Identify a possible loop','What might withdrawal and repeated analysis accomplish now and cost later?','Withdrawal may offer relief while limiting connection and new information. Replaying without new facts may take time from rest. Neither explanation removes the real interruptions or care commitment.'),('Choose tools that fit','Select responses for the interpretation, interruptions, scheduling, and reduced activity.','Examine the global rejection thought; consider a boundary or organiser support about interruptions; problem-solve the scheduling constraint; consider a manageable reading activity if Rowan values it. Do not treat every issue as a thinking error.'),('Design one small experiment','Choose a voluntary action with an observable prediction and an interpretation plan.','If Rowan wants to return and timing permits, they might try one short contribution under the turn-taking format and observe whether they finish. Success is not guaranteed; keeping participation accessible and respecting care responsibilities matters.'),('Update with new information','What should change after the organiser’s message?','The interruption pattern affecting others complicates the personal-rejection account and supports a practical format issue. The scheduling problem remains real. Rowan need not deny either fact.'),('Plan for a difficult week','Write an early sign, one feasible response, and a source of support.','An early sign could be repeated replay replacing rest. A response could be one practical decision and a return to a chosen activity. Support might include a trusted person or professional help if difficulties persist or substantially interfere.')],
+  'tasks':[('Map without mind-reading','Separate observations, interpretations, feelings, actions, and unknowns.','Observations include two interruptions and thanks from the organiser. “Nobody wants me” is broader than the evidence. Fatigue is reported; ask about other bodily and emotional experiences rather than inventing them.'),('Identify a possible loop','What might withdrawal and repeated analysis accomplish now and cost later?','Withdrawal may offer relief while limiting connection and new information. Replaying without new facts may take time from rest. Neither explanation removes the real interruptions or care commitment.'),('Choose tools that fit','Select responses for the interpretation, interruptions, scheduling, and reduced activity.','Examine the global rejection thought; consider a boundary or organiser support about interruptions; problem-solve the scheduling constraint; consider a manageable reading activity if Rowan values it. Do not treat every issue as a thinking error.'),('Design one small experiment','Using the facts available so far, write a voluntary action Rowan could take, a prediction you could observe, and what two possible outcomes would tell you.','If Rowan wants to return and finds a meeting they can attend, they might make one short contribution. They predict they will be interrupted before they finish. Finishing would show a contribution was possible on that occasion. An interruption would show what happened that time and could help Rowan decide whether to ask the organiser for support.'),('Update with new information','Read the organiser’s message above. Which part of your original account would you revise? Name one obstacle that remains and one change Rowan could now consider.','Other participants were interrupted too, which gives Rowan another way to understand the interruptions. The turn-taking format could change how long members get to speak. The next meeting still conflicts with Rowan’s care commitment.'),('Plan for a difficult week','Write an early sign, one feasible response, and a source of support.','An early sign could be repeated replay replacing rest. A response could be one practical decision and a return to a chosen activity. Support might include a trusted person or professional help if difficulties persist or substantially interfere.')],
   'rubric':['Reasoning stays specific to the evidence.','Several tools are matched to distinct problems.','The experiment is voluntary, safe, and observable.','New facts revise the account.','The maintenance plan recognises capacity and support.']}
 ]
-course.update({'title':'Everyday CBT','version':'0.1.0','status':'Draft course · practitioner review pending','reviewed':'2026-11-13','scope':'Introductory CBT skills education for adults. Not diagnosis, individual treatment, or professional clinical training. No practitioner review or learner pilot has taken place.','characters':[{'name':'Alex','description':'A volunteer who wants to contribute without getting trapped in repeated checking.'},{'name':'Nia','description':'A shift worker making room for creativity, rest, and fair treatment.'},{'name':'Jules','description':'A drawing-group member practising clearer requests and realistic commitments.'}]})
+course.update({'title':'Everyday CBT','version':'0.1.0','status':'Draft course. Practitioner review pending.','reviewed':'2026-11-19','scope':'This draft introduces cognitive behavioural therapy (CBT) skills to adults with no psychology background. Diagnosis, individual treatment and professional training are outside its scope. A practitioner review and learner pilot are still pending.','characters':[{'name':'Alex','description':'A volunteer who wants to contribute without getting trapped in repeated checking.'},{'name':'Nia','description':'A shift worker making room for creativity, rest, and fair treatment.'},{'name':'Jules','description':'A drawing-group member practising clearer requests and realistic commitments.'}]})
 for number,c in enumerate(course['chapters'],1):
     assert 'pages' in c,c['slug']
     for i,page in enumerate(c['pages'],1):page['id']=f'c{number:02d}p{i:02d}'

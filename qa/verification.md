@@ -51,3 +51,34 @@ contextual exports, end-of-chapter transitions, and chapter evidence destination
 The full browser regression passed all 96 pages and 72 feedback variants, including
 exports, writing privacy, progress, keyboard navigation, playback, and unavailable
 storage. The extracted offline package also passed. Results: `clean-footer-review.json`.
+
+## Learner-facing audit — 2026-11-19
+
+Reviewed all 96 lesson pages and their narration scripts, 72 choice explanations,
+24 recall prompts, 12 lab exercises and worked responses, three independent cases,
+and the workbook, reading and offline editions against the stated audience of
+adults new to psychology. Checked headings, definitions, required actions,
+comparison questions, feedback, scope and reading order. All nine distinct chapter
+source URLs returned HTTP 200.
+
+Chromium exercised every lesson and choice. Each lab was completed with its five
+fields, its worked response, a revised draft and an exact text export. In the
+course and workbook, the final case kept the organiser’s message closed until
+after the first four tasks, when it could be used to revise the initial account.
+Keyboard checks covered choice feedback, recall reveals, the skip link, navigation,
+audio rate and closing Chapter options. Layout checks covered six widths at
+320–1440 px and both OS colour preferences with the course’s light palette.
+Ten sampled views passed the automated axe A/AA screen.
+
+A browser profile created before this update resumed the saved lesson and kept its
+practice mark. Separate checks covered blocked reads, failed writes, retry, corrupt
+data, canceled or failed removal, successful removal in a second tab, exact draft
+exports and writing absent from browser storage. The strict build checked all 96
+recordings against the revised scripts; 85 existing recordings kept their original
+hashes. The two regenerated tagged PDFs contain all applicable answers and the
+workbook preserves the final-case order. The extracted package worked at a local
+HTTP address with internet requests blocked. Managed Chromium blocked direct
+file navigation.
+
+These are wording and functional checks. Practitioner review, a learner pilot,
+human listening review and clinical outcome testing are still pending.

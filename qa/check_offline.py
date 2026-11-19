@@ -40,7 +40,7 @@ with TemporaryDirectory(prefix='everyday-cbt-') as directory:
         page.wait_for_function('document.querySelector("#p1 audio").currentTime > .2')
         page.locator('[data-page-link="1"]').click()
         page.locator('#p2 input[value="0"]').check()
-        page.get_by_role('button',name='Check my reasoning').click()
+        page.get_by_role('button',name='Check choice').click()
         assert page.locator('.feedback:visible').count()==1
         assert not unexpected,unexpected
         browser.close()

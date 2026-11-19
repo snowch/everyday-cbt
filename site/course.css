@@ -21,13 +21,14 @@ button:disabled { cursor: default; opacity: .5; }
 .player-heading h1 { font-size: 28px; line-height: 1.35; letter-spacing: -.6px; margin-bottom: 0; }
 .player-heading .eyebrow { margin-bottom: 7px; }
 .player-heading > a { font-size: 14px; white-space: nowrap; }
-.draft-label { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
-.lesson-nav { display: flex; gap: 8px; margin-bottom: 18px; }
-.lesson-nav a { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #B8CBD8; border-radius: 50%; font-size: 13px; text-decoration: none; }
+.draft-label { font-size: 13px; color: var(--muted); margin: 6px 0 0; }
+.page-location { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 18px; }
+.lesson-nav { display: flex; flex-wrap: wrap; gap: 6px; }
+.lesson-nav a { display: grid; place-items: center; width: 32px; height: 36px; border: 1px solid #B8CBD8; border-radius: 50%; font-size: 13px; text-decoration: none; }
 .lesson-nav a[aria-current] { background: var(--ocean); color: white; border-color: var(--ocean); }
-.player-controls { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 13px 18px; background: white; border: 1px solid #CFDCE5; border-radius: 10px; margin-bottom: 20px; }
-.player-controls .button { margin: 0; min-height: 44px; font-size: 14px; padding: 9px 15px; }
-#page-status { font-size: 13px; text-align: center; color: var(--muted); }
+#workbook-tools { scroll-margin-top: 16px; }
+#page-status { font-size: 14px; color: var(--muted); margin: 0; }
+.storage-notice, .lesson-copy .writing-note { color: var(--muted); font-size: 14px; }
 .lesson { background: white; border: 1px solid #CFDCE5; border-radius: 12px; overflow: hidden; min-height: 470px; }
 .lesson.has-art { display: grid; grid-template-columns: 1.08fr 1fr; }
 .lesson-copy { padding: 36px 40px; max-width: 1050px; margin-inline: auto; width: 100%; }
@@ -53,12 +54,16 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .option input { margin-top: 6px; width: 18px; height: 18px; flex-shrink: 0; accent-color: var(--ocean); }
 .option-letter { color: var(--muted); }
 .feedback { padding: 18px 20px 4px; background: #EAF2F7; border-left: 3px solid var(--ocean); margin-top: 20px; }
+.feedback:focus-visible { outline: 3px solid var(--berry); outline-offset: 4px; }
 .feedback > strong { font-size: 14px; }
 .feedback p { font-size: 16px; }
 .writing-field { margin-block: 20px; }
 .writing-field label { display: block; font-size: 15px; margin-bottom: 8px; }
 textarea { width: 100%; display: block; padding: 12px 14px; background: #FCFDFE; border: 1px solid #A9BFCD; border-radius: 6px; resize: vertical; font-size: 16px; line-height: 1.6; }
 .recall-question { border-top: 1px solid var(--line); padding-block: 20px; }
+.practice-status { color: var(--muted); margin-top: 10px; font-size: 14px !important; }
+.practice-status:empty { display: none; }
+button[aria-disabled="true"] { cursor: default; }
 .recall-question h3 { font-size: 22px; line-height: 1.5; }
 .review-note { color: var(--muted); font-size: 15px !important; margin-top: 20px; }
 .progress-caption { font-size: 13px; color: var(--muted); margin-block: 24px; }
@@ -91,6 +96,8 @@ textarea { width: 100%; display: block; padding: 12px 14px; background: #FCFDFE;
 .reading .concept-figure { max-width: 520px; margin: 25px auto; }
 .reading-options { padding-left: 24px; }
 .reading-options li { padding-left: 8px; margin-block: 20px; }
+.reading-options { list-style-type: upper-alpha; }
+.practice-status + .response-tools { margin-bottom: 0; }
 .printed-response { display: none; }
 @media (max-width: 800px) {
   .lesson-copy { padding: 26px; }
@@ -110,9 +117,6 @@ textarea { width: 100%; display: block; padding: 12px 14px; background: #FCFDFE;
   .story-figure svg { max-height: 300px; }
   .player-heading { flex-direction: column; gap: 10px; }
   .player-heading h1 { font-size: 24px; }
-  .player-controls { gap: 8px; padding: 12px; }
-  .player-controls .button { font-size: 13px; padding: 9px 11px; }
-  #page-status { font-size: 11px; }
   .narration { flex-direction: column; align-items: stretch; gap: 12px; }
   .narration label { align-self: start; }
   .option { padding: 13px 12px; gap: 10px; font-size: 16px; }
@@ -126,7 +130,7 @@ textarea { width: 100%; display: block; padding: 12px 14px; background: #FCFDFE;
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
 @media print {
   .lesson-page[hidden] { display: block !important; }
-  .site-header nav, .lesson-nav, .player-controls, .narration, .recording-transcript, .response-tools, .chapter-navigation, .progress-caption, button, .button, .skip { display: none !important; }
+  .site-header nav, .screen-only, .page-location, .storage-notice, .narration, .recording-transcript, .response-tools, .chapter-navigation, .progress-caption, .practice-status, .writing-note, button, .button, .skip { display: none !important; }
   .document { max-width: none; padding: 0; }
   .lesson { min-height: 0; border: 0; }
   .lesson.has-art { grid-template-columns: 1.2fr 1fr; }
@@ -146,16 +150,27 @@ textarea { width: 100%; display: block; padding: 12px 14px; background: #FCFDFE;
   .chapter { break-inside: avoid; }
 }
 .diagram-key { margin-top: 18px; font-size: 14px; padding-inline: 8px; }
-.diagram-key dt { font-weight: 700; margin-top: 12px; }
-.diagram-key dd { margin-left: 0; color: var(--muted); }
+.diagram-text { display: none; }
+.diagram-key dt, .diagram-text dt { font-weight: 700; margin-top: 12px; }
+.diagram-key[open] { border-top: 1px solid var(--line); padding-top: 12px; }
+.diagram-key dd, .diagram-text dd { margin-left: 0; color: var(--muted); }
 @media print { .diagram-key { display: none; } }
+@media screen and (max-width: 620px) {
+  .concept-figure svg, .diagram-key { display: none; }
+  .concept-figure figcaption { color: var(--ink); text-align: left; font-size: 16px; font-weight: 700; margin: 0 0 8px; }
+  .diagram-text { display: block; font-size: 15px; }
+  .diagram-text dl, .diagram-relationship { margin: 0; }
+  .diagram-text dd { padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .diagram-text dd:last-child { border: 0; padding-bottom: 0; }
+}
+
 .lesson-page { scroll-margin-top: 18px; }
 .lesson-bottom-controls { display: flex; justify-content: space-between; gap: 15px; padding-block: 8px 18px; }
 .lesson-bottom-controls .button { font-size: 14px; min-height: 44px; margin: 0; }
 @media print { .lesson-bottom-controls { display: none; } }
-/* Teaching summaries sit beside the visual; full prose stays in the transcript. */
+/* Teaching summaries carry the main ideas beside each visual. */
 .key-messages { list-style: none; padding: 0; margin: 0; }
-.key-messages li { font-size: 20px; line-height: 1.6; padding-left: 18px; border-left: 2px solid var(--ocean); margin: 20px 0; }
+.key-messages li { font-size: 18px; line-height: 1.6; padding-left: 18px; border-left: 2px solid var(--ocean); margin: 20px 0; }
 @media (max-width: 800px) { .key-messages li { font-size: 18px; padding-left: 16px; } }
 @media print { .key-messages li { font-size: 12pt; margin-block: 12px; } }
 .chapter-options { position: relative; flex-shrink: 0; font-size: 14px; }
@@ -166,7 +181,6 @@ textarea { width: 100%; display: block; padding: 12px 14px; background: #FCFDFE;
 .chapter-options-panel .button { font-size: 14px; min-height: 40px; padding: 8px 13px; }
 .chapter-page .player { padding-bottom: 0; }
 .chapter-page .response-tools { margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--line); }
-.chapter-page .response-tools > p { margin-bottom: 0; font-size: 13px; }
 .lesson-footer { justify-content: flex-start; flex-wrap: nowrap; gap: 24px; padding-block: 16px 22px; }
 .lesson-footer a { font-size: 12px; }
 @media (max-width: 620px) { .chapter-options-panel { right: auto; left: 0; } }
